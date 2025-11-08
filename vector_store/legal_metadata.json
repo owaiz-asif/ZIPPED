@@ -1,0 +1,162 @@
+[
+  {
+    "filename": "client_presentation_2024.txt",
+    "content": "CLIENT PRESENTATION MEETING - January 20, 2024\n\nClient: TechCorp Industries\nOur Team: Project Manager, Lead Developer, UX Designer\n\nMeeting Objective:\nPresent progress on Q1 deliverables and gather feedback on new features\n\nPresentation Highlights:\n- Demonstrated new dashboard interface with real-time analytics\n- Showed prototype of mobile app integration\n- Presented timeline for remaining Q1 milestones\n\nClient Feedback:\n- Very positive response to dashboard design\n- Requested additional export functionality for reports\n- Interested in expanding mobile app features\n- Approved budget for additional developer resources\n\nDecisions Made:\n1. Proceed with export functionality (priority: high)\n2. Schedule follow-up meeting for mobile app roadmap\n3. Add 2 developers to team starting next month\n4. Client will provide sample data for testing by end of week\n\nNext Steps:\n- Send detailed proposal for export features\n- Prepare mobile app roadmap presentation\n- Begin onboarding process for new developers\n\nFollow-up Meeting: February 5, 2024 at 2:00 PM"
+  },
+  {
+    "filename": "client_presentation_2024.txt",
+    "content": "week\n\nNext Steps:\n- Send detailed proposal for export features\n- Prepare mobile app roadmap presentation\n- Begin onboarding process for new developers\n\nFollow-up Meeting: February 5, 2024 at 2:00 PM"
+  },
+  {
+    "filename": "team_standup_2024.txt",
+    "content": "TEAM STANDUP MEETING - January 15, 2024\n\nAttendees: John, Sarah, Mike, Emily, David\n\nAgenda:\n1. Sprint progress review\n2. Blockers and challenges\n3. Upcoming priorities\n\nKey Points Discussed:\n- Completed user authentication module ahead of schedule\n- Database migration is 80% complete, expected finish by end of week\n- Frontend redesign is on track for next sprint\n- Integration testing revealed 3 minor bugs, all assigned and in progress\n\nBlockers:\n- Sarah: Waiting on API documentation from external vendor (expected tomorrow)\n- Mike: Need access to staging environment (escalated to DevOps)\n\nAction Items:\n1. John: Review pull requests by EOD\n2. Sarah: Follow up with vendor on API docs\n3. Mike: Schedule meeting with DevOps team\n4. Emily: Update project timeline with new estimates\n5. David: Prepare demo for client review next week\n\nNext Meeting: January 18, 2024 at 10:00 AM"
+  },
+  {
+    "filename": "team_standup_2024.txt",
+    "content": "PI docs\n3. Mike: Schedule meeting with DevOps team\n4. Emily: Update project timeline with new estimates\n5. David: Prepare demo for client review next week\n\nNext Meeting: January 18, 2024 at 10:00 AM"
+  },
+  {
+    "filename": "quarterly_planning_2024.txt",
+    "content": "Q1 2024 QUARTERLY PLANNING SCHEDULE\n\nJANUARY\nWeek 1 (Jan 1-5):\n- Kickoff Meeting: Jan 2, 10:00 AM\n- Goal Setting Session: Jan 3, 2:00 PM\n- Resource Allocation Review: Jan 4, 11:00 AM\n\nWeek 2 (Jan 8-12):\n- Sprint Planning: Jan 8, 9:00 AM\n- Client Onboarding: Jan 10, 2:00 PM\n- Technical Architecture Review: Jan 12, 10:00 AM\n\nWeek 3 (Jan 15-19):\n- Mid-Sprint Review: Jan 16, 3:00 PM\n- Team Building Activity: Jan 18, 2:00 PM\n- Progress Report: Jan 19, 11:00 AM\n\nWeek 4 (Jan 22-26):\n- Sprint Retrospective: Jan 22, 10:00 AM\n- Next Sprint Planning: Jan 24, 9:00 AM\n- Monthly Review: Jan 26, 2:00 PM\n\nFEBRUARY\n- Focus: Feature Development and Testing\n- Key Milestones: Beta Release, User Testing Phase\n- Major Meetings: Client Demo (Feb 15), Technical Review (Feb 28)\n\nMARCH\n- Focus: Final Testing and Production Preparation\n- Key Milestones: Production Release, Documentation Complete\n- Major Meetings: Launch Planning (Mar 5), Post-Launch Review (Mar 29)\n\nQUARTERLY OBJECTIVES:\n1. Complete Phase 1 development\n2. Achieve 95% test coverage\n3. Onboard 3 new team members\n4. Launch beta version to 50 users\n5. Complete all documentation\n\nRESOURCE ALLOCATION:\n- Development Team: 8 developers\n- QA Team: 3"
+  },
+  {
+    "filename": "quarterly_planning_2024.txt",
+    "content": "lopment\n2. Achieve 95% test coverage\n3. Onboard 3 new team members\n4. Launch beta version to 50 users\n5. Complete all documentation\n\nRESOURCE ALLOCATION:\n- Development Team: 8 developers\n- QA Team: 3 testers\n- Design Team: 2 designers\n- Project Management: 2 PMs\n\nCRITICAL DEADLINES:\n- Jan 31: Phase 1 Alpha Complete\n- Feb 29: Beta Release\n- Mar 31: Production Launch"
+  },
+  {
+    "filename": "quarterly_planning_2024.txt",
+    "content": "eam: 8 developers\n- QA Team: 3 testers\n- Design Team: 2 designers\n- Project Management: 2 PMs\n\nCRITICAL DEADLINES:\n- Jan 31: Phase 1 Alpha Complete\n- Feb 29: Beta Release\n- Mar 31: Production Launch"
+  },
+  {
+    "filename": "weekly_schedule_january.txt",
+    "content": "WEEKLY MEETING SCHEDULE - January 2024\n\nMONDAY\n- 9:00 AM: Team Standup (30 min) - Conference Room A\n- 2:00 PM: Sprint Planning (60 min) - Conference Room B\n- 4:00 PM: Code Review Session (45 min) - Virtual\n\nTUESDAY\n- 10:00 AM: Client Check-in (30 min) - Virtual\n- 11:00 AM: Design Review (45 min) - Conference Room A\n- 3:00 PM: One-on-One Sessions (30 min each) - Various\n\nWEDNESDAY\n- 9:30 AM: Team Standup (30 min) - Conference Room A\n- 1:00 PM: Architecture Discussion (60 min) - Conference Room B\n- 3:30 PM: Training Session (90 min) - Virtual\n\nTHURSDAY\n- 10:00 AM: Team Standup (30 min) - Conference Room A\n- 2:00 PM: Retrospective Meeting (60 min) - Conference Room B\n- 4:00 PM: Documentation Review (30 min) - Virtual\n\nFRIDAY\n- 9:00 AM: Weekly Review (45 min) - Conference Room A\n- 11:00 AM: Planning for Next Week (60 min) - Conference Room B\n- 2:00 PM: Optional Office Hours - Virtual\n\nRECURRING MEETINGS:\n- Daily Standup: Mon-Thu at 9:30 AM (30 min)\n- Weekly Sprint Planning: Mondays at 2:00 PM (60 min)\n- Monthly All-Hands: First Friday at 10:00 AM (90 min)\n\nMEETING BEST PRACTICES:\n- Always have an agenda prepared\n- Start and end on time\n- Take notes and share action items\n- Follow up wi"
+  },
+  {
+    "filename": "weekly_schedule_january.txt",
+    "content": "PM (60 min)\n- Monthly All-Hands: First Friday at 10:00 AM (90 min)\n\nMEETING BEST PRACTICES:\n- Always have an agenda prepared\n- Start and end on time\n- Take notes and share action items\n- Follow up within 24 hours with meeting summary"
+  },
+  {
+    "filename": "weekly_schedule_january.txt",
+    "content": "rst Friday at 10:00 AM (90 min)\n\nMEETING BEST PRACTICES:\n- Always have an agenda prepared\n- Start and end on time\n- Take notes and share action items\n- Follow up within 24 hours with meeting summary"
+  },
+  {
+    "filename": "client_presentation_2024.txt",
+    "content": "CLIENT PRESENTATION MEETING - January 20, 2024\n\nClient: TechCorp Industries\nOur Team: Project Manager, Lead Developer, UX Designer\n\nMeeting Objective:\nPresent progress on Q1 deliverables and gather feedback on new features\n\nPresentation Highlights:\n- Demonstrated new dashboard interface with real-time analytics\n- Showed prototype of mobile app integration\n- Presented timeline for remaining Q1 milestones\n\nClient Feedback:\n- Very positive response to dashboard design\n- Requested additional export functionality for reports\n- Interested in expanding mobile app features\n- Approved budget for additional developer resources\n\nDecisions Made:\n1. Proceed with export functionality (priority: high)\n2. Schedule follow-up meeting for mobile app roadmap\n3. Add 2 developers to team starting next month\n4. Client will provide sample data for testing by end of week\n\nNext Steps:\n- Send detailed proposal for export features\n- Prepare mobile app roadmap presentation\n- Begin onboarding process for new developers\n\nFollow-up Meeting: February 5, 2024 at 2:00 PM"
+  },
+  {
+    "filename": "client_presentation_2024.txt",
+    "content": "week\n\nNext Steps:\n- Send detailed proposal for export features\n- Prepare mobile app roadmap presentation\n- Begin onboarding process for new developers\n\nFollow-up Meeting: February 5, 2024 at 2:00 PM"
+  },
+  {
+    "filename": "team_standup_2024.txt",
+    "content": "TEAM STANDUP MEETING - January 15, 2024\n\nAttendees: John, Sarah, Mike, Emily, David\n\nAgenda:\n1. Sprint progress review\n2. Blockers and challenges\n3. Upcoming priorities\n\nKey Points Discussed:\n- Completed user authentication module ahead of schedule\n- Database migration is 80% complete, expected finish by end of week\n- Frontend redesign is on track for next sprint\n- Integration testing revealed 3 minor bugs, all assigned and in progress\n\nBlockers:\n- Sarah: Waiting on API documentation from external vendor (expected tomorrow)\n- Mike: Need access to staging environment (escalated to DevOps)\n\nAction Items:\n1. John: Review pull requests by EOD\n2. Sarah: Follow up with vendor on API docs\n3. Mike: Schedule meeting with DevOps team\n4. Emily: Update project timeline with new estimates\n5. David: Prepare demo for client review next week\n\nNext Meeting: January 18, 2024 at 10:00 AM"
+  },
+  {
+    "filename": "team_standup_2024.txt",
+    "content": "PI docs\n3. Mike: Schedule meeting with DevOps team\n4. Emily: Update project timeline with new estimates\n5. David: Prepare demo for client review next week\n\nNext Meeting: January 18, 2024 at 10:00 AM"
+  },
+  {
+    "filename": "quarterly_planning_2024.txt",
+    "content": "Q1 2024 QUARTERLY PLANNING SCHEDULE\n\nJANUARY\nWeek 1 (Jan 1-5):\n- Kickoff Meeting: Jan 2, 10:00 AM\n- Goal Setting Session: Jan 3, 2:00 PM\n- Resource Allocation Review: Jan 4, 11:00 AM\n\nWeek 2 (Jan 8-12):\n- Sprint Planning: Jan 8, 9:00 AM\n- Client Onboarding: Jan 10, 2:00 PM\n- Technical Architecture Review: Jan 12, 10:00 AM\n\nWeek 3 (Jan 15-19):\n- Mid-Sprint Review: Jan 16, 3:00 PM\n- Team Building Activity: Jan 18, 2:00 PM\n- Progress Report: Jan 19, 11:00 AM\n\nWeek 4 (Jan 22-26):\n- Sprint Retrospective: Jan 22, 10:00 AM\n- Next Sprint Planning: Jan 24, 9:00 AM\n- Monthly Review: Jan 26, 2:00 PM\n\nFEBRUARY\n- Focus: Feature Development and Testing\n- Key Milestones: Beta Release, User Testing Phase\n- Major Meetings: Client Demo (Feb 15), Technical Review (Feb 28)\n\nMARCH\n- Focus: Final Testing and Production Preparation\n- Key Milestones: Production Release, Documentation Complete\n- Major Meetings: Launch Planning (Mar 5), Post-Launch Review (Mar 29)\n\nQUARTERLY OBJECTIVES:\n1. Complete Phase 1 development\n2. Achieve 95% test coverage\n3. Onboard 3 new team members\n4. Launch beta version to 50 users\n5. Complete all documentation\n\nRESOURCE ALLOCATION:\n- Development Team: 8 developers\n- QA Team: 3"
+  },
+  {
+    "filename": "quarterly_planning_2024.txt",
+    "content": "lopment\n2. Achieve 95% test coverage\n3. Onboard 3 new team members\n4. Launch beta version to 50 users\n5. Complete all documentation\n\nRESOURCE ALLOCATION:\n- Development Team: 8 developers\n- QA Team: 3 testers\n- Design Team: 2 designers\n- Project Management: 2 PMs\n\nCRITICAL DEADLINES:\n- Jan 31: Phase 1 Alpha Complete\n- Feb 29: Beta Release\n- Mar 31: Production Launch"
+  },
+  {
+    "filename": "quarterly_planning_2024.txt",
+    "content": "eam: 8 developers\n- QA Team: 3 testers\n- Design Team: 2 designers\n- Project Management: 2 PMs\n\nCRITICAL DEADLINES:\n- Jan 31: Phase 1 Alpha Complete\n- Feb 29: Beta Release\n- Mar 31: Production Launch"
+  },
+  {
+    "filename": "weekly_schedule_january.txt",
+    "content": "WEEKLY MEETING SCHEDULE - January 2024\n\nMONDAY\n- 9:00 AM: Team Standup (30 min) - Conference Room A\n- 2:00 PM: Sprint Planning (60 min) - Conference Room B\n- 4:00 PM: Code Review Session (45 min) - Virtual\n\nTUESDAY\n- 10:00 AM: Client Check-in (30 min) - Virtual\n- 11:00 AM: Design Review (45 min) - Conference Room A\n- 3:00 PM: One-on-One Sessions (30 min each) - Various\n\nWEDNESDAY\n- 9:30 AM: Team Standup (30 min) - Conference Room A\n- 1:00 PM: Architecture Discussion (60 min) - Conference Room B\n- 3:30 PM: Training Session (90 min) - Virtual\n\nTHURSDAY\n- 10:00 AM: Team Standup (30 min) - Conference Room A\n- 2:00 PM: Retrospective Meeting (60 min) - Conference Room B\n- 4:00 PM: Documentation Review (30 min) - Virtual\n\nFRIDAY\n- 9:00 AM: Weekly Review (45 min) - Conference Room A\n- 11:00 AM: Planning for Next Week (60 min) - Conference Room B\n- 2:00 PM: Optional Office Hours - Virtual\n\nRECURRING MEETINGS:\n- Daily Standup: Mon-Thu at 9:30 AM (30 min)\n- Weekly Sprint Planning: Mondays at 2:00 PM (60 min)\n- Monthly All-Hands: First Friday at 10:00 AM (90 min)\n\nMEETING BEST PRACTICES:\n- Always have an agenda prepared\n- Start and end on time\n- Take notes and share action items\n- Follow up wi"
+  },
+  {
+    "filename": "weekly_schedule_january.txt",
+    "content": "PM (60 min)\n- Monthly All-Hands: First Friday at 10:00 AM (90 min)\n\nMEETING BEST PRACTICES:\n- Always have an agenda prepared\n- Start and end on time\n- Take notes and share action items\n- Follow up within 24 hours with meeting summary"
+  },
+  {
+    "filename": "weekly_schedule_january.txt",
+    "content": "rst Friday at 10:00 AM (90 min)\n\nMEETING BEST PRACTICES:\n- Always have an agenda prepared\n- Start and end on time\n- Take notes and share action items\n- Follow up within 24 hours with meeting summary"
+  },
+  {
+    "filename": "client_presentation_2024.txt",
+    "content": "CLIENT PRESENTATION MEETING - January 20, 2024\n\nClient: TechCorp Industries\nOur Team: Project Manager, Lead Developer, UX Designer\n\nMeeting Objective:\nPresent progress on Q1 deliverables and gather feedback on new features\n\nPresentation Highlights:\n- Demonstrated new dashboard interface with real-time analytics\n- Showed prototype of mobile app integration\n- Presented timeline for remaining Q1 milestones\n\nClient Feedback:\n- Very positive response to dashboard design\n- Requested additional export functionality for reports\n- Interested in expanding mobile app features\n- Approved budget for additional developer resources\n\nDecisions Made:\n1. Proceed with export functionality (priority: high)\n2. Schedule follow-up meeting for mobile app roadmap\n3. Add 2 developers to team starting next month\n4. Client will provide sample data for testing by end of week\n\nNext Steps:\n- Send detailed proposal for export features\n- Prepare mobile app roadmap presentation\n- Begin onboarding process for new developers\n\nFollow-up Meeting: February 5, 2024 at 2:00 PM"
+  },
+  {
+    "filename": "client_presentation_2024.txt",
+    "content": "week\n\nNext Steps:\n- Send detailed proposal for export features\n- Prepare mobile app roadmap presentation\n- Begin onboarding process for new developers\n\nFollow-up Meeting: February 5, 2024 at 2:00 PM"
+  },
+  {
+    "filename": "team_standup_2024.txt",
+    "content": "TEAM STANDUP MEETING - January 15, 2024\n\nAttendees: John, Sarah, Mike, Emily, David\n\nAgenda:\n1. Sprint progress review\n2. Blockers and challenges\n3. Upcoming priorities\n\nKey Points Discussed:\n- Completed user authentication module ahead of schedule\n- Database migration is 80% complete, expected finish by end of week\n- Frontend redesign is on track for next sprint\n- Integration testing revealed 3 minor bugs, all assigned and in progress\n\nBlockers:\n- Sarah: Waiting on API documentation from external vendor (expected tomorrow)\n- Mike: Need access to staging environment (escalated to DevOps)\n\nAction Items:\n1. John: Review pull requests by EOD\n2. Sarah: Follow up with vendor on API docs\n3. Mike: Schedule meeting with DevOps team\n4. Emily: Update project timeline with new estimates\n5. David: Prepare demo for client review next week\n\nNext Meeting: January 18, 2024 at 10:00 AM"
+  },
+  {
+    "filename": "team_standup_2024.txt",
+    "content": "PI docs\n3. Mike: Schedule meeting with DevOps team\n4. Emily: Update project timeline with new estimates\n5. David: Prepare demo for client review next week\n\nNext Meeting: January 18, 2024 at 10:00 AM"
+  },
+  {
+    "filename": "quarterly_planning_2024.txt",
+    "content": "Q1 2024 QUARTERLY PLANNING SCHEDULE\n\nJANUARY\nWeek 1 (Jan 1-5):\n- Kickoff Meeting: Jan 2, 10:00 AM\n- Goal Setting Session: Jan 3, 2:00 PM\n- Resource Allocation Review: Jan 4, 11:00 AM\n\nWeek 2 (Jan 8-12):\n- Sprint Planning: Jan 8, 9:00 AM\n- Client Onboarding: Jan 10, 2:00 PM\n- Technical Architecture Review: Jan 12, 10:00 AM\n\nWeek 3 (Jan 15-19):\n- Mid-Sprint Review: Jan 16, 3:00 PM\n- Team Building Activity: Jan 18, 2:00 PM\n- Progress Report: Jan 19, 11:00 AM\n\nWeek 4 (Jan 22-26):\n- Sprint Retrospective: Jan 22, 10:00 AM\n- Next Sprint Planning: Jan 24, 9:00 AM\n- Monthly Review: Jan 26, 2:00 PM\n\nFEBRUARY\n- Focus: Feature Development and Testing\n- Key Milestones: Beta Release, User Testing Phase\n- Major Meetings: Client Demo (Feb 15), Technical Review (Feb 28)\n\nMARCH\n- Focus: Final Testing and Production Preparation\n- Key Milestones: Production Release, Documentation Complete\n- Major Meetings: Launch Planning (Mar 5), Post-Launch Review (Mar 29)\n\nQUARTERLY OBJECTIVES:\n1. Complete Phase 1 development\n2. Achieve 95% test coverage\n3. Onboard 3 new team members\n4. Launch beta version to 50 users\n5. Complete all documentation\n\nRESOURCE ALLOCATION:\n- Development Team: 8 developers\n- QA Team: 3"
+  },
+  {
+    "filename": "quarterly_planning_2024.txt",
+    "content": "lopment\n2. Achieve 95% test coverage\n3. Onboard 3 new team members\n4. Launch beta version to 50 users\n5. Complete all documentation\n\nRESOURCE ALLOCATION:\n- Development Team: 8 developers\n- QA Team: 3 testers\n- Design Team: 2 designers\n- Project Management: 2 PMs\n\nCRITICAL DEADLINES:\n- Jan 31: Phase 1 Alpha Complete\n- Feb 29: Beta Release\n- Mar 31: Production Launch"
+  },
+  {
+    "filename": "quarterly_planning_2024.txt",
+    "content": "eam: 8 developers\n- QA Team: 3 testers\n- Design Team: 2 designers\n- Project Management: 2 PMs\n\nCRITICAL DEADLINES:\n- Jan 31: Phase 1 Alpha Complete\n- Feb 29: Beta Release\n- Mar 31: Production Launch"
+  },
+  {
+    "filename": "weekly_schedule_january.txt",
+    "content": "WEEKLY MEETING SCHEDULE - January 2024\n\nMONDAY\n- 9:00 AM: Team Standup (30 min) - Conference Room A\n- 2:00 PM: Sprint Planning (60 min) - Conference Room B\n- 4:00 PM: Code Review Session (45 min) - Virtual\n\nTUESDAY\n- 10:00 AM: Client Check-in (30 min) - Virtual\n- 11:00 AM: Design Review (45 min) - Conference Room A\n- 3:00 PM: One-on-One Sessions (30 min each) - Various\n\nWEDNESDAY\n- 9:30 AM: Team Standup (30 min) - Conference Room A\n- 1:00 PM: Architecture Discussion (60 min) - Conference Room B\n- 3:30 PM: Training Session (90 min) - Virtual\n\nTHURSDAY\n- 10:00 AM: Team Standup (30 min) - Conference Room A\n- 2:00 PM: Retrospective Meeting (60 min) - Conference Room B\n- 4:00 PM: Documentation Review (30 min) - Virtual\n\nFRIDAY\n- 9:00 AM: Weekly Review (45 min) - Conference Room A\n- 11:00 AM: Planning for Next Week (60 min) - Conference Room B\n- 2:00 PM: Optional Office Hours - Virtual\n\nRECURRING MEETINGS:\n- Daily Standup: Mon-Thu at 9:30 AM (30 min)\n- Weekly Sprint Planning: Mondays at 2:00 PM (60 min)\n- Monthly All-Hands: First Friday at 10:00 AM (90 min)\n\nMEETING BEST PRACTICES:\n- Always have an agenda prepared\n- Start and end on time\n- Take notes and share action items\n- Follow up wi"
+  },
+  {
+    "filename": "weekly_schedule_january.txt",
+    "content": "PM (60 min)\n- Monthly All-Hands: First Friday at 10:00 AM (90 min)\n\nMEETING BEST PRACTICES:\n- Always have an agenda prepared\n- Start and end on time\n- Take notes and share action items\n- Follow up within 24 hours with meeting summary"
+  },
+  {
+    "filename": "weekly_schedule_january.txt",
+    "content": "rst Friday at 10:00 AM (90 min)\n\nMEETING BEST PRACTICES:\n- Always have an agenda prepared\n- Start and end on time\n- Take notes and share action items\n- Follow up within 24 hours with meeting summary"
+  },
+  {
+    "filename": "client_presentation_2024.txt",
+    "content": "CLIENT PRESENTATION MEETING - January 20, 2024\n\nClient: TechCorp Industries\nOur Team: Project Manager, Lead Developer, UX Designer\n\nMeeting Objective:\nPresent progress on Q1 deliverables and gather feedback on new features\n\nPresentation Highlights:\n- Demonstrated new dashboard interface with real-time analytics\n- Showed prototype of mobile app integration\n- Presented timeline for remaining Q1 milestones\n\nClient Feedback:\n- Very positive response to dashboard design\n- Requested additional export functionality for reports\n- Interested in expanding mobile app features\n- Approved budget for additional developer resources\n\nDecisions Made:\n1. Proceed with export functionality (priority: high)\n2. Schedule follow-up meeting for mobile app roadmap\n3. Add 2 developers to team starting next month\n4. Client will provide sample data for testing by end of week\n\nNext Steps:\n- Send detailed proposal for export features\n- Prepare mobile app roadmap presentation\n- Begin onboarding process for new developers\n\nFollow-up Meeting: February 5, 2024 at 2:00 PM"
+  },
+  {
+    "filename": "client_presentation_2024.txt",
+    "content": "week\n\nNext Steps:\n- Send detailed proposal for export features\n- Prepare mobile app roadmap presentation\n- Begin onboarding process for new developers\n\nFollow-up Meeting: February 5, 2024 at 2:00 PM"
+  },
+  {
+    "filename": "team_standup_2024.txt",
+    "content": "TEAM STANDUP MEETING - January 15, 2024\n\nAttendees: John, Sarah, Mike, Emily, David\n\nAgenda:\n1. Sprint progress review\n2. Blockers and challenges\n3. Upcoming priorities\n\nKey Points Discussed:\n- Completed user authentication module ahead of schedule\n- Database migration is 80% complete, expected finish by end of week\n- Frontend redesign is on track for next sprint\n- Integration testing revealed 3 minor bugs, all assigned and in progress\n\nBlockers:\n- Sarah: Waiting on API documentation from external vendor (expected tomorrow)\n- Mike: Need access to staging environment (escalated to DevOps)\n\nAction Items:\n1. John: Review pull requests by EOD\n2. Sarah: Follow up with vendor on API docs\n3. Mike: Schedule meeting with DevOps team\n4. Emily: Update project timeline with new estimates\n5. David: Prepare demo for client review next week\n\nNext Meeting: January 18, 2024 at 10:00 AM"
+  },
+  {
+    "filename": "team_standup_2024.txt",
+    "content": "PI docs\n3. Mike: Schedule meeting with DevOps team\n4. Emily: Update project timeline with new estimates\n5. David: Prepare demo for client review next week\n\nNext Meeting: January 18, 2024 at 10:00 AM"
+  },
+  {
+    "filename": "quarterly_planning_2024.txt",
+    "content": "Q1 2024 QUARTERLY PLANNING SCHEDULE\n\nJANUARY\nWeek 1 (Jan 1-5):\n- Kickoff Meeting: Jan 2, 10:00 AM\n- Goal Setting Session: Jan 3, 2:00 PM\n- Resource Allocation Review: Jan 4, 11:00 AM\n\nWeek 2 (Jan 8-12):\n- Sprint Planning: Jan 8, 9:00 AM\n- Client Onboarding: Jan 10, 2:00 PM\n- Technical Architecture Review: Jan 12, 10:00 AM\n\nWeek 3 (Jan 15-19):\n- Mid-Sprint Review: Jan 16, 3:00 PM\n- Team Building Activity: Jan 18, 2:00 PM\n- Progress Report: Jan 19, 11:00 AM\n\nWeek 4 (Jan 22-26):\n- Sprint Retrospective: Jan 22, 10:00 AM\n- Next Sprint Planning: Jan 24, 9:00 AM\n- Monthly Review: Jan 26, 2:00 PM\n\nFEBRUARY\n- Focus: Feature Development and Testing\n- Key Milestones: Beta Release, User Testing Phase\n- Major Meetings: Client Demo (Feb 15), Technical Review (Feb 28)\n\nMARCH\n- Focus: Final Testing and Production Preparation\n- Key Milestones: Production Release, Documentation Complete\n- Major Meetings: Launch Planning (Mar 5), Post-Launch Review (Mar 29)\n\nQUARTERLY OBJECTIVES:\n1. Complete Phase 1 development\n2. Achieve 95% test coverage\n3. Onboard 3 new team members\n4. Launch beta version to 50 users\n5. Complete all documentation\n\nRESOURCE ALLOCATION:\n- Development Team: 8 developers\n- QA Team: 3"
+  },
+  {
+    "filename": "quarterly_planning_2024.txt",
+    "content": "lopment\n2. Achieve 95% test coverage\n3. Onboard 3 new team members\n4. Launch beta version to 50 users\n5. Complete all documentation\n\nRESOURCE ALLOCATION:\n- Development Team: 8 developers\n- QA Team: 3 testers\n- Design Team: 2 designers\n- Project Management: 2 PMs\n\nCRITICAL DEADLINES:\n- Jan 31: Phase 1 Alpha Complete\n- Feb 29: Beta Release\n- Mar 31: Production Launch"
+  },
+  {
+    "filename": "quarterly_planning_2024.txt",
+    "content": "eam: 8 developers\n- QA Team: 3 testers\n- Design Team: 2 designers\n- Project Management: 2 PMs\n\nCRITICAL DEADLINES:\n- Jan 31: Phase 1 Alpha Complete\n- Feb 29: Beta Release\n- Mar 31: Production Launch"
+  },
+  {
+    "filename": "weekly_schedule_january.txt",
+    "content": "WEEKLY MEETING SCHEDULE - January 2024\n\nMONDAY\n- 9:00 AM: Team Standup (30 min) - Conference Room A\n- 2:00 PM: Sprint Planning (60 min) - Conference Room B\n- 4:00 PM: Code Review Session (45 min) - Virtual\n\nTUESDAY\n- 10:00 AM: Client Check-in (30 min) - Virtual\n- 11:00 AM: Design Review (45 min) - Conference Room A\n- 3:00 PM: One-on-One Sessions (30 min each) - Various\n\nWEDNESDAY\n- 9:30 AM: Team Standup (30 min) - Conference Room A\n- 1:00 PM: Architecture Discussion (60 min) - Conference Room B\n- 3:30 PM: Training Session (90 min) - Virtual\n\nTHURSDAY\n- 10:00 AM: Team Standup (30 min) - Conference Room A\n- 2:00 PM: Retrospective Meeting (60 min) - Conference Room B\n- 4:00 PM: Documentation Review (30 min) - Virtual\n\nFRIDAY\n- 9:00 AM: Weekly Review (45 min) - Conference Room A\n- 11:00 AM: Planning for Next Week (60 min) - Conference Room B\n- 2:00 PM: Optional Office Hours - Virtual\n\nRECURRING MEETINGS:\n- Daily Standup: Mon-Thu at 9:30 AM (30 min)\n- Weekly Sprint Planning: Mondays at 2:00 PM (60 min)\n- Monthly All-Hands: First Friday at 10:00 AM (90 min)\n\nMEETING BEST PRACTICES:\n- Always have an agenda prepared\n- Start and end on time\n- Take notes and share action items\n- Follow up wi"
+  },
+  {
+    "filename": "weekly_schedule_january.txt",
+    "content": "PM (60 min)\n- Monthly All-Hands: First Friday at 10:00 AM (90 min)\n\nMEETING BEST PRACTICES:\n- Always have an agenda prepared\n- Start and end on time\n- Take notes and share action items\n- Follow up within 24 hours with meeting summary"
+  },
+  {
+    "filename": "weekly_schedule_january.txt",
+    "content": "rst Friday at 10:00 AM (90 min)\n\nMEETING BEST PRACTICES:\n- Always have an agenda prepared\n- Start and end on time\n- Take notes and share action items\n- Follow up within 24 hours with meeting summary"
+  }
+]

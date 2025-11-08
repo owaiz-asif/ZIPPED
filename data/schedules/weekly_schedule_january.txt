@@ -1,0 +1,38 @@
+WEEKLY MEETING SCHEDULE - January 2024
+
+MONDAY
+- 9:00 AM: Team Standup (30 min) - Conference Room A
+- 2:00 PM: Sprint Planning (60 min) - Conference Room B
+- 4:00 PM: Code Review Session (45 min) - Virtual
+
+TUESDAY
+- 10:00 AM: Client Check-in (30 min) - Virtual
+- 11:00 AM: Design Review (45 min) - Conference Room A
+- 3:00 PM: One-on-One Sessions (30 min each) - Various
+
+WEDNESDAY
+- 9:30 AM: Team Standup (30 min) - Conference Room A
+- 1:00 PM: Architecture Discussion (60 min) - Conference Room B
+- 3:30 PM: Training Session (90 min) - Virtual
+
+THURSDAY
+- 10:00 AM: Team Standup (30 min) - Conference Room A
+- 2:00 PM: Retrospective Meeting (60 min) - Conference Room B
+- 4:00 PM: Documentation Review (30 min) - Virtual
+
+FRIDAY
+- 9:00 AM: Weekly Review (45 min) - Conference Room A
+- 11:00 AM: Planning for Next Week (60 min) - Conference Room B
+- 2:00 PM: Optional Office Hours - Virtual
+
+RECURRING MEETINGS:
+- Daily Standup: Mon-Thu at 9:30 AM (30 min)
+- Weekly Sprint Planning: Mondays at 2:00 PM (60 min)
+- Monthly All-Hands: First Friday at 10:00 AM (90 min)
+
+MEETING BEST PRACTICES:
+- Always have an agenda prepared
+- Start and end on time
+- Take notes and share action items
+- Follow up within 24 hours with meeting summary
+

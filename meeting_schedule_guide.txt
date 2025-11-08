@@ -1,0 +1,36 @@
+﻿MEETING SCHEDULING BEST PRACTICES
+
+Optimal Meeting Times Based on Energy Levels:
+- Morning Peak (9:00 AM - 11:00 AM): Best for creative work, design reviews, and strategic planning. Energy levels are highest during this time.
+- Mid-Morning (11:00 AM - 12:00 PM): Good for team standups and quick syncs. Still high energy but starting to decline.
+- Afternoon (2:00 PM - 4:00 PM): Ideal for collaborative meetings, client calls, and problem-solving sessions. Energy recovers after lunch.
+- Late Afternoon (4:00 PM - 5:00 PM): Suitable for wrap-up meetings and status updates. Energy starts declining.
+- Avoid Early Morning (before 9 AM): Low energy, people are still waking up.
+- Avoid Post-Lunch (12:00 PM - 1:30 PM): Energy dip after eating, people are less focused.
+
+Meeting Duration Guidelines:
+- Quick Sync: 15 minutes - Use for daily standups and brief updates
+- Standard Meeting: 30 minutes - Most common meeting length
+- Deep Dive: 60 minutes - For complex discussions and planning
+- Extended Session: 90-120 minutes - For workshops and intensive planning
+
+Meeting Types and Best Times:
+1. Design Reviews: 10:00 AM - 11:00 AM (Peak creativity)
+2. Team Standups: 9:30 AM or 2:00 PM (Avoid post-lunch dip)
+3. Client Meetings: 10:00 AM - 12:00 PM or 2:00 PM - 4:00 PM
+4. One-on-Ones: Flexible, but 10:00 AM or 3:00 PM work best
+5. Brainstorming: 10:00 AM - 11:30 AM (Peak creative energy)
+6. Status Updates: 4:00 PM (End of day wrap-up)
+
+Energy-Based Scheduling:
+- High Energy Tasks: Schedule important meetings, creative work, and decision-making during 9-11 AM
+- Medium Energy Tasks: Routine meetings, reviews, and collaborative work during 2-4 PM
+- Low Energy Tasks: Administrative tasks, emails, and planning during low-energy periods
+
+Meeting Best Practices:
+- Schedule meetings at least 24 hours in advance
+- Include clear agenda in calendar invite
+- Limit meetings to essential participants
+- End meetings 5 minutes early to allow transition time
+- Avoid back-to-back meetings without breaks
+- Schedule buffer time between meetings (15-30 minutes)
