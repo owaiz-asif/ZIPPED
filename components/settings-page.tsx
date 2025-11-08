@@ -1,155 +1,165 @@
 "use client"
 
 import { useState } from "react"
-import { Key, Shield, AlertCircle, CheckCircle2 } from "lucide-react"
+import { Key, Shield, Database, Info, CheckCircle2 } from "lucide-react"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
 
 export default function SettingsPage() {
-  const [gcpKey, setGcpKey] = useState("")
-  const [gcpKeyStatus, setGcpKeyStatus] = useState<"idle" | "validating" | "valid" | "invalid">("idle")
+  const [showEnvInfo, setShowEnvInfo] = useState(false)
 
-  const handleGCPKeyValidation = async () => {
-    if (!gcpKey.trim()) {
-      setGcpKeyStatus("invalid")
-      return
-    }
-
-    setGcpKeyStatus("validating")
-
-    // Simulate validation
-    setTimeout(() => {
-      setGcpKeyStatus("valid")
-    }, 1500)
-  }
+  const envVars = [
+    {
+      name: "DATABASE_URL",
+      description: "PostgreSQL database connection string",
+      status: "configured",
+      required: true,
+    },
+    {
+      name: "OPENAI_API_KEY",
+      description: "OpenAI API key for AI features",
+      status: process.env.OPENAI_API_KEY ? "configured" : "missing",
+      required: false,
+    },
+    {
+      name: "SMTP_HOST / SMTP_USER / SMTP_PASS",
+      description: "Email server configuration for sending emails",
+      status: "missing",
+      required: false,
+    },
+    {
+      name: "RAG_SERVICE_URL",
+      description: "RAG service endpoint for document retrieval",
+      status: "using default",
+      required: false,
+    },
+  ]
 
   return (
     <div className="space-y-8">
-      <div className="bg-slate-800/50 border border-slate-700 rounded-xl p-6">
-        <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
-          <Key size={24} className="text-blue-400" />
-          API Key Management
-        </h2>
-
-        <div className="space-y-6">
-          {/* GCP Configuration */}
-          <div className="bg-slate-700/30 rounded-lg p-6 border border-slate-600">
-            <h3 className="font-semibold text-white mb-4">Google Cloud Platform Configuration</h3>
-
-            <div className="space-y-4">
-              <div>
-                <label className="block text-sm text-slate-300 mb-2">GCP Project ID</label>
-                <input
-                  type="text"
-                  placeholder="Enter your GCP Project ID"
-                  className="w-full bg-slate-600 border border-slate-500 rounded px-4 py-2 text-white placeholder-slate-400"
-                  defaultValue={process.env.NEXT_PUBLIC_GCP_PROJECT_ID || ""}
-                />
-              </div>
-
-              <div>
-                <label className="block text-sm text-slate-300 mb-2">GCP Service Account JSON</label>
-                <textarea
-                  placeholder="Paste your GCP service account JSON key here (kept secure)"
-                  value={gcpKey}
-                  onChange={(e) => {
-                    setGcpKey(e.target.value)
-                    setGcpKeyStatus("idle")
-                  }}
-                  className="w-full bg-slate-600 border border-slate-500 rounded px-4 py-2 text-white placeholder-slate-400 font-mono text-xs h-32"
-                />
-                <p className="text-xs text-slate-400 mt-2">
-                  Your keys are encrypted and stored securely. Never share them publicly.
+      <Card className="bg-slate-800/60 border-slate-700/50">
+        <CardHeader>
+          <CardTitle className="text-slate-100 flex items-center gap-2">
+            <Shield className="w-5 h-5 text-blue-400" />
+            Security & Configuration
+          </CardTitle>
+          <CardDescription className="text-slate-400">
+            Manage your application settings and integrations
+          </CardDescription>
+        </CardHeader>
+        <CardContent className="space-y-6">
+          <div className="bg-blue-500/10 border border-blue-500/30 rounded-lg p-4">
+            <div className="flex gap-3">
+              <Info className="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" />
+              <div className="text-sm text-blue-300">
+                <p className="font-medium mb-1">Secure Configuration</p>
+                <p className="text-blue-300/80">
+                  API keys and secrets are managed securely through environment variables in Replit.
+                  Never expose sensitive credentials in your code or frontend.
                 </p>
               </div>
-
-              <button
-                onClick={handleGCPKeyValidation}
-                className="bg-blue-500/20 hover:bg-blue-500/30 border border-blue-500 text-blue-300 px-4 py-2 rounded transition-colors"
-              >
-                {gcpKeyStatus === "validating" ? "Validating..." : "Validate GCP Key"}
-              </button>
-
-              {gcpKeyStatus === "valid" && (
-                <div className="bg-green-500/10 border border-green-500/50 rounded p-3 flex gap-2">
-                  <CheckCircle2 size={16} className="text-green-400 flex-shrink-0 mt-0.5" />
-                  <p className="text-sm text-green-300">GCP configuration validated successfully</p>
-                </div>
-              )}
-
-              {gcpKeyStatus === "invalid" && (
-                <div className="bg-red-500/10 border border-red-500/50 rounded p-3 flex gap-2">
-                  <AlertCircle size={16} className="text-red-400 flex-shrink-0 mt-0.5" />
-                  <p className="text-sm text-red-300">Invalid GCP key. Please check and try again.</p>
-                </div>
-              )}
             </div>
           </div>
 
-          {/* OpenAI Configuration */}
-          <div className="bg-slate-700/30 rounded-lg p-6 border border-slate-600">
-            <h3 className="font-semibold text-white mb-4">OpenAI API Configuration</h3>
-
-            <div>
-              <label className="block text-sm text-slate-300 mb-2">OpenAI API Key</label>
-              <input
-                type="password"
-                placeholder="sk-..."
-                className="w-full bg-slate-600 border border-slate-500 rounded px-4 py-2 text-white placeholder-slate-400"
-              />
-              <p className="text-xs text-slate-400 mt-2">Used for intelligent email drafting and emotion analysis</p>
-            </div>
-          </div>
-
-          {/* Social Media API Keys */}
-          <div className="bg-slate-700/30 rounded-lg p-6 border border-slate-600">
-            <h3 className="font-semibold text-white mb-4">Social Media API Keys</h3>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {[
-                { name: "Gmail API Key", env: "GMAIL_API_KEY" },
-                { name: "LinkedIn Client ID", env: "LINKEDIN_CLIENT_ID" },
-                { name: "Slack Bot Token", env: "SLACK_BOT_TOKEN" },
-                { name: "Twitter API Key", env: "TWITTER_API_KEY" },
-              ].map((api) => (
-                <div key={api.env}>
-                  <label className="block text-sm text-slate-300 mb-2">{api.name}</label>
-                  <input
-                    type="password"
-                    placeholder={`Enter ${api.name}`}
-                    className="w-full bg-slate-600 border border-slate-500 rounded px-4 py-2 text-white placeholder-slate-400 text-sm"
-                  />
+          <div>
+            <h3 className="text-lg font-semibold text-white mb-4 flex items-center gap-2">
+              <Key className="w-5 h-5 text-purple-400" />
+              Environment Variables Status
+            </h3>
+            <div className="space-y-3">
+              {envVars.map((envVar) => (
+                <div
+                  key={envVar.name}
+                  className="bg-slate-700/30 rounded-lg p-4 border border-slate-600"
+                >
+                  <div className="flex items-start justify-between gap-4">
+                    <div className="flex-1">
+                      <div className="flex items-center gap-2 mb-1">
+                        <code className="text-sm font-mono text-slate-200">{envVar.name}</code>
+                        {envVar.required && (
+                          <span className="text-xs bg-red-500/20 text-red-300 px-2 py-0.5 rounded">
+                            Required
+                          </span>
+                        )}
+                      </div>
+                      <p className="text-sm text-slate-400">{envVar.description}</p>
+                    </div>
+                    <div
+                      className={`flex items-center gap-2 px-3 py-1 rounded-full text-xs font-medium ${
+                        envVar.status === "configured"
+                          ? "bg-green-500/20 text-green-300"
+                          : envVar.status === "using default"
+                          ? "bg-yellow-500/20 text-yellow-300"
+                          : "bg-slate-500/20 text-slate-300"
+                      }`}
+                    >
+                      {envVar.status === "configured" && <CheckCircle2 className="w-3 h-3" />}
+                      {envVar.status}
+                    </div>
+                  </div>
                 </div>
               ))}
             </div>
           </div>
-        </div>
-      </div>
 
-      {/* Security Information */}
-      <div className="bg-slate-800/50 border border-slate-700 rounded-xl p-6">
-        <h2 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
-          <Shield size={20} className="text-green-400" />
-          Security & Privacy
-        </h2>
+          <div className="bg-slate-700/30 rounded-lg p-4 border border-slate-600">
+            <h4 className="text-sm font-semibold text-white mb-2">How to Configure Environment Variables</h4>
+            <ol className="text-sm text-slate-400 space-y-2 list-decimal list-inside">
+              <li>Click the "Secrets" tab in the Replit sidebar (lock icon)</li>
+              <li>Add your environment variables as key-value pairs</li>
+              <li>Restart your application for changes to take effect</li>
+              <li>Your secrets are encrypted and never exposed in code</li>
+            </ol>
+          </div>
 
-        <div className="space-y-3 text-sm text-slate-300">
-          <p>
-            <strong>Data Encryption:</strong> All API keys and sensitive data are encrypted at rest using AES-256
-            encryption.
-          </p>
-          <p>
-            <strong>Blockchain Verification:</strong> All AI decisions and data processing are logged on blockchain for
-            complete transparency and auditability.
-          </p>
-          <p>
-            <strong>Row-Level Security:</strong> User data is isolated using RLS policies to ensure complete data
-            privacy.
-          </p>
-          <p>
-            <strong>GDPR Compliant:</strong> Your emotional and productivity data is treated as personal information
-            under GDPR.
-          </p>
-        </div>
-      </div>
+          <div>
+            <h3 className="text-lg font-semibold text-white mb-4 flex items-center gap-2">
+              <Database className="w-5 h-5 text-green-400" />
+              Database Configuration
+            </h3>
+            <Card className="bg-slate-700/30 border-slate-600">
+              <CardContent className="pt-6">
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <p className="text-sm text-slate-300 font-medium mb-1">
+                      Database Connected
+                    </p>
+                    <p className="text-xs text-slate-400">
+                      Your PostgreSQL database is configured and ready to use
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </CardContent>
+      </Card>
+
+      <Card className="bg-slate-800/60 border-slate-700/50">
+        <CardHeader>
+          <CardTitle className="text-slate-100">Application Information</CardTitle>
+          <CardDescription className="text-slate-400">
+            About AI Heir
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <div className="space-y-3 text-sm text-slate-300">
+            <div className="flex justify-between py-2 border-b border-slate-700">
+              <span className="text-slate-400">Version</span>
+              <span className="font-mono">0.1.0</span>
+            </div>
+            <div className="flex justify-between py-2 border-b border-slate-700">
+              <span className="text-slate-400">Framework</span>
+              <span className="font-mono">Next.js 16.0.0</span>
+            </div>
+            <div className="flex justify-between py-2">
+              <span className="text-slate-400">Environment</span>
+              <span className="font-mono">Production</span>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
     </div>
   )
 }

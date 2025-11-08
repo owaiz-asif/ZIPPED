@@ -4,7 +4,7 @@ import { validateEnvironmentVariables } from "@/lib/security-middleware"
 // Validate environment variables on startup
 const envValidation = validateEnvironmentVariables()
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const response = NextResponse.next()
 
   // Security headers
