@@ -361,6 +361,13 @@ const emotionKeywords: { [key: string]: string } = {
 
 export function analyzeEmotion(text: string): EmotionScore {
   const lowerText = text.toLowerCase()
+  
+  // Sentence-level analysis - split into sentences first
+  const sentences = lowerText
+    .split(/[.!?]+/)
+    .map(s => s.trim())
+    .filter(s => s.length > 0)
+  
   // Better word extraction - handle contractions, punctuation, etc.
   const words = lowerText
     .replace(/[.,!?;:'"()\[\]{}]/g, " ")
@@ -381,33 +388,67 @@ export function analyzeEmotion(text: string): EmotionScore {
   let intensity = 50
   let emotionCount = 0
 
-  // Count emotion keywords with phrase matching
+  // Sentence-level context analysis
+  sentences.forEach((sentence) => {
+    const sentenceWords = sentence.split(/\s+/).filter(w => w.length > 0)
+    let sentenceEmotionScore = 0
+    
+    // Analyze each word in sentence context
+    sentenceWords.forEach((word, wordIndex) => {
+      const cleanWord = word.trim()
+      if (!cleanWord) return
+
+      // Check single word
+      if (emotionKeywords[cleanWord]) {
+        const emotion = emotionKeywords[cleanWord]
+        emotions[emotion as keyof typeof emotions]++
+        emotionCount++
+        sentenceEmotionScore++
+      }
+
+      // Check two-word phrases
+      if (wordIndex < sentenceWords.length - 1) {
+        const twoWord = `${cleanWord}_${sentenceWords[wordIndex + 1]}`
+        if (emotionKeywords[twoWord]) {
+          const emotion = emotionKeywords[twoWord]
+          emotions[emotion as keyof typeof emotions]++
+          emotionCount++
+          sentenceEmotionScore++
+        }
+      }
+
+      // Check three-word phrases
+      if (wordIndex < sentenceWords.length - 2) {
+        const threeWord = `${cleanWord}_${sentenceWords[wordIndex + 1]}_${sentenceWords[wordIndex + 2]}`
+        if (emotionKeywords[threeWord]) {
+          const emotion = emotionKeywords[threeWord]
+          emotions[emotion as keyof typeof emotions]++
+          emotionCount++
+          sentenceEmotionScore++
+        }
+      }
+    })
+    
+    // Boost emotions if sentence has multiple emotion words (contextual intensity)
+    if (sentenceEmotionScore > 1) {
+      Object.keys(emotions).forEach((key) => {
+        if (emotions[key as keyof typeof emotions] > 0) {
+          emotions[key as keyof typeof emotions] += Math.floor(sentenceEmotionScore * 0.5)
+        }
+      })
+    }
+  })
+
+  // Also do word-level analysis for comprehensive coverage
   words.forEach((word, index) => {
     const cleanWord = word.trim()
     if (!cleanWord) return
 
-    // Check single word
-    if (emotionKeywords[cleanWord]) {
+    // Check single word (avoid double counting)
+    if (emotionKeywords[cleanWord] && !words.slice(0, index).includes(cleanWord)) {
       const emotion = emotionKeywords[cleanWord]
-      emotions[emotion as keyof typeof emotions]++
-      emotionCount++
-    }
-
-    // Check two-word phrases
-    if (index < words.length - 1) {
-      const twoWord = `${cleanWord}_${words[index + 1]}`
-      if (emotionKeywords[twoWord]) {
-        const emotion = emotionKeywords[twoWord]
-        emotions[emotion as keyof typeof emotions]++
-        emotionCount++
-      }
-    }
-
-    // Check three-word phrases
-    if (index < words.length - 2) {
-      const threeWord = `${cleanWord}_${words[index + 1]}_${words[index + 2]}`
-      if (emotionKeywords[threeWord]) {
-        const emotion = emotionKeywords[threeWord]
+      // Only add if not already counted in sentence analysis
+      if (emotions[emotion as keyof typeof emotions] === 0) {
         emotions[emotion as keyof typeof emotions]++
         emotionCount++
       }

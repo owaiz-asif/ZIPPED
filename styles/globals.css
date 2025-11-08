@@ -3,6 +3,7 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* --- Existing Color Variables Remain Unchanged --- */
 :root {
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -115,11 +116,67 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
+/* --- Global Base Layers --- */
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    /* Adding transition for smooth focus ring and hover effects */
+    @apply border-border outline-ring/50 transition-all duration-200 ease-in-out;
   }
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* --- Animation Enhancements --- */
+@layer components {
+  /* 1. Sidebar Item Hover: Subtle background shift */
+  .sidebar-item-animated {
+    @apply transition-colors duration-150;
+    
+    /* Ensure only relevant styles transition to keep performance high */
+    &:hover {
+      /* Uses a slightly darker/lighter shade based on the theme for a lift effect */
+      background-color: color-mix(in oklch, var(--sidebar-accent), var(--sidebar-border) 20%);
+    }
+  }
+
+  /* 2. Primary Button Feedback: Subtle scale on click for a 'tactile' feel */
+  .btn-primary-animated {
+    @apply transition-transform duration-100 ease-in-out;
+    
+    /* Elegant scale down when the button is active (clicked/pressed) */
+    &:active {
+      transform: scale(0.98);
+      /* Subtle dimming of the background color for depth */
+      background-color: color-mix(in oklch, var(--primary), var(--primary-foreground) 5%);
+    }
+  }
+
+  /* 3. Input/Focus Ring Elegance: Better focus state */
+  /* Target elements that should show a ring, like inputs and buttons */
+  input:focus,
+  button:focus,
+  a:focus,
+  textarea:focus {
+    /* Use the ring variable for a cohesive look */
+    box-shadow: 0 0 0 2px var(--ring);
+    /* Transition added in @layer base for smoothness */
+  }
+
+  /* 4. Card Entrance Animation (using tw-animate-css) */
+  /* You will need to apply the class animate__fadeInUp to your new card components */
+  .card-new-entry {
+    /* Base styles for the new card */
+    @apply bg-card text-card-foreground p-4 rounded-lg;
+    
+    /* Apply the animation */
+    /* animate__faster is recommended for elegant, non-intrusive animations */
+    @apply animate_animated animatefadeInUp animate_faster;
+  }
+
+  /* 5. Tooltip/Popover Fade-in */
+  .popover-animated {
+    /* Subtle fade-in for tooltips and popovers */
+    @apply animate_animated animatefadeIn animate_fast;
+  }
 }

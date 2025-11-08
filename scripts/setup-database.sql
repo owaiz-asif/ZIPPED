@@ -42,6 +42,22 @@ CREATE TABLE IF NOT EXISTS meetings (
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
+-- Create meeting transcripts and summaries table
+CREATE TABLE IF NOT EXISTS meeting_summaries (
+  id VARCHAR(255) PRIMARY KEY,
+  user_id INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+  title VARCHAR(255) NOT NULL,
+  transcript TEXT NOT NULL,
+  key_takeaways JSONB,
+  action_items JSONB,
+  decisions JSONB,
+  unresolved_topics JSONB,
+  insights JSONB,
+  audio_file_url TEXT,
+  duration INTEGER,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
 -- Create tasks table
 CREATE TABLE IF NOT EXISTS tasks (
   id SERIAL PRIMARY KEY,

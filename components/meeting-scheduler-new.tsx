@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useRef } from "react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Calendar, Clock, Users, Check } from "lucide-react"
@@ -22,6 +22,8 @@ interface Meeting {
 }
 
 export default function MeetingScheduler() {
+  const meetingIdCounter = useRef(2) // Start at 2 since we have 2 initial meetings
+  
   const [meetings, setMeetings] = useState<Meeting[]>([
     {
       id: "1",
@@ -65,8 +67,9 @@ export default function MeetingScheduler() {
 
     const bestSlot = timeSlots.find((slot) => slot.available && slot.energyLevel > 75)
 
+    meetingIdCounter.current += 1
     const meeting: Meeting = {
-      id: Date.now().toString(),
+      id: `meeting-${meetingIdCounter.current}`,
       title: newMeeting.title,
       attendees: newMeeting.attendees || "TBD",
       duration: newMeeting.duration,
@@ -100,7 +103,14 @@ export default function MeetingScheduler() {
               placeholder="e.g., Client Meeting, Team Sync"
               value={newMeeting.title}
               onChange={(e) => setNewMeeting({ ...newMeeting, title: e.target.value })}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" && newMeeting.title.trim()) {
+                  e.preventDefault()
+                  handleAddMeeting()
+                }
+              }}
               className="w-full bg-slate-700 border border-slate-600 rounded-lg px-4 py-2 text-white placeholder-slate-400 focus:outline-none focus:border-blue-500"
+              suppressHydrationWarning
             />
           </div>
 
@@ -113,6 +123,7 @@ export default function MeetingScheduler() {
                 value={newMeeting.attendees}
                 onChange={(e) => setNewMeeting({ ...newMeeting, attendees: e.target.value })}
                 className="w-full bg-slate-700 border border-slate-600 rounded-lg px-4 py-2 text-white placeholder-slate-400 focus:outline-none focus:border-blue-500"
+                suppressHydrationWarning
               />
             </div>
             <div>
@@ -121,6 +132,8 @@ export default function MeetingScheduler() {
                 value={newMeeting.duration}
                 onChange={(e) => setNewMeeting({ ...newMeeting, duration: Number.parseInt(e.target.value) })}
                 className="w-full bg-slate-700 border border-slate-600 rounded-lg px-4 py-2 text-white focus:outline-none focus:border-blue-500"
+                title="Select meeting duration"
+                suppressHydrationWarning
               >
                 <option value="15">15 min</option>
                 <option value="30">30 min</option>
@@ -131,7 +144,7 @@ export default function MeetingScheduler() {
             </div>
           </div>
 
-          <Button onClick={handleAddMeeting} className="w-full bg-blue-600 hover:bg-blue-700">
+          <Button onClick={handleAddMeeting} className="w-full bg-blue-600 hover:bg-blue-700" suppressHydrationWarning>
             <Calendar className="w-4 h-4 mr-2" />
             Get AI Recommendation
           </Button>
@@ -217,6 +230,7 @@ export default function MeetingScheduler() {
                     onClick={() => handleScheduleMeeting(meeting.id)}
                     size="sm"
                     className="bg-blue-600 hover:bg-blue-700 ml-4"
+                    suppressHydrationWarning
                   >
                     <Check className="w-3 h-3" />
                   </Button>

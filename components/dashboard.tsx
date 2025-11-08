@@ -7,6 +7,9 @@ import { Button } from "@/components/ui/button"
 import { Brain, Heart, TrendingUp, Zap } from "lucide-react"
 import EmotionDetector from "@/components/emotion-detector"
 import MeetingSchedulerNew from "@/components/meeting-scheduler-new"
+import EmailTaskExtractor from "@/components/email-task-extractor"
+import DailyActivityManager from "@/components/daily-activity-manager"
+import MeetingAssistant from "@/components/meeting-assistant"
 import { useMoodData } from "@/hooks/use-mood-data"
 
 const DEMO_USER_ID = 1
@@ -75,63 +78,63 @@ export default function Dashboard() {
   return (
     <div className="space-y-8">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-        <Card className="bg-slate-800/50 border-slate-700">
+        <Card className="bg-gradient-to-br from-rose-950/50 to-pink-950/50 border-rose-800/50 hover:border-rose-700/50 transition-all">
           <CardHeader className="pb-3">
-            <CardTitle className="text-sm text-slate-400 flex items-center gap-2">
-              <Heart className="w-4 h-4 text-red-500" />
+            <CardTitle className="text-sm text-rose-300 font-semibold flex items-center gap-2">
+              <Heart className="w-4 h-4 text-rose-400" />
               Average Mood
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="text-3xl font-bold text-white">{stats.avgMood}%</div>
-            <p className="text-xs text-slate-500 mt-1">Today</p>
+            <div className="text-3xl font-bold text-rose-400">{stats.avgMood}%</div>
+            <p className="text-xs text-rose-300/70 mt-1">Today</p>
           </CardContent>
         </Card>
 
-        <Card className="bg-slate-800/50 border-slate-700">
+        <Card className="bg-gradient-to-br from-amber-950/50 to-yellow-950/50 border-amber-800/50 hover:border-amber-700/50 transition-all">
           <CardHeader className="pb-3">
-            <CardTitle className="text-sm text-slate-400 flex items-center gap-2">
-              <Zap className="w-4 h-4 text-yellow-500" />
+            <CardTitle className="text-sm text-amber-300 font-semibold flex items-center gap-2">
+              <Zap className="w-4 h-4 text-amber-400" />
               Energy Level
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="text-3xl font-bold text-white">{stats.avgEnergy}%</div>
-            <p className="text-xs text-slate-500 mt-1">Current</p>
+            <div className="text-3xl font-bold text-amber-400">{stats.avgEnergy}%</div>
+            <p className="text-xs text-amber-300/70 mt-1">Current</p>
           </CardContent>
         </Card>
 
-        <Card className="bg-slate-800/50 border-slate-700">
+        <Card className="bg-gradient-to-br from-cyan-950/50 to-blue-950/50 border-cyan-800/50 hover:border-cyan-700/50 transition-all">
           <CardHeader className="pb-3">
-            <CardTitle className="text-sm text-slate-400 flex items-center gap-2">
-              <Brain className="w-4 h-4 text-blue-500" />
+            <CardTitle className="text-sm text-cyan-300 font-semibold flex items-center gap-2">
+              <Brain className="w-4 h-4 text-cyan-400" />
               Focus Score
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="text-3xl font-bold text-white">{stats.focusScore}%</div>
-            <p className="text-xs text-slate-500 mt-1">Excellent</p>
+            <div className="text-3xl font-bold text-cyan-400">{stats.focusScore}%</div>
+            <p className="text-xs text-cyan-300/70 mt-1">Excellent</p>
           </CardContent>
         </Card>
 
-        <Card className="bg-slate-800/50 border-slate-700">
+        <Card className="bg-gradient-to-br from-orange-950/50 to-red-950/50 border-orange-800/50 hover:border-orange-700/50 transition-all">
           <CardHeader className="pb-3">
-            <CardTitle className="text-sm text-slate-400 flex items-center gap-2">
-              <TrendingUp className="w-4 h-4 text-orange-500" />
+            <CardTitle className="text-sm text-orange-300 font-semibold flex items-center gap-2">
+              <TrendingUp className="w-4 h-4 text-orange-400" />
               Stress Level
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="text-3xl font-bold text-white">{stats.stressLevel}%</div>
-            <p className="text-xs text-slate-500 mt-1">Low</p>
+            <div className="text-3xl font-bold text-orange-400">{stats.stressLevel}%</div>
+            <p className="text-xs text-orange-300/70 mt-1">Low</p>
           </CardContent>
         </Card>
       </div>
 
-      <Card className="bg-slate-800/50 border-slate-700">
+      <Card className="bg-gradient-to-br from-slate-800/60 to-slate-900/60 border-slate-700/50 hover:border-slate-600/50 transition-all">
         <CardHeader>
-          <CardTitle>Mood & Energy Trends</CardTitle>
-          <CardDescription>Your emotional state throughout the day</CardDescription>
+          <CardTitle className="text-slate-100">Mood & Energy Trends</CardTitle>
+          <CardDescription className="text-slate-400">Your emotional state throughout the day</CardDescription>
         </CardHeader>
         <CardContent>
           {isLoading ? (
@@ -154,25 +157,24 @@ export default function Dashboard() {
         </CardContent>
       </Card>
 
-      <Card className="bg-slate-800/50 border-slate-700">
+      <Card className="bg-gradient-to-br from-slate-800/60 to-slate-900/60 border-slate-700/50 hover:border-slate-600/50 transition-all">
         <CardHeader>
-          <CardTitle>Quick Mood Check-in</CardTitle>
-          <CardDescription>How are you feeling right now?</CardDescription>
+          <CardTitle className="text-slate-100">Quick Mood Check-in</CardTitle>
+          <CardDescription className="text-slate-400">How are you feeling right now?</CardDescription>
         </CardHeader>
         <CardContent className="flex flex-wrap gap-3">
           {[
-            { emoji: "😢", label: "Poor", value: 20 },
-            { emoji: "😕", label: "Fair", value: 40 },
-            { emoji: "😐", label: "Okay", value: 60 },
-            { emoji: "😊", label: "Good", value: 80 },
-            { emoji: "🤩", label: "Excellent", value: 100 },
+            { emoji: "😢", label: "Poor", value: 20, color: "from-red-900/50 to-rose-900/50 border-red-800/50 hover:border-red-700/50" },
+            { emoji: "😕", label: "Fair", value: 40, color: "from-orange-900/50 to-amber-900/50 border-orange-800/50 hover:border-orange-700/50" },
+            { emoji: "😐", label: "Okay", value: 60, color: "from-yellow-900/50 to-lime-900/50 border-yellow-800/50 hover:border-yellow-700/50" },
+            { emoji: "😊", label: "Good", value: 80, color: "from-green-900/50 to-emerald-900/50 border-green-800/50 hover:border-green-700/50" },
+            { emoji: "🤩", label: "Excellent", value: 100, color: "from-blue-900/50 to-cyan-900/50 border-blue-800/50 hover:border-blue-700/50" },
           ].map((item) => (
             <Button
               key={item.value}
               onClick={() => handleQuickMoodUpdate(item.value)}
               disabled={isLoading}
-              variant="outline"
-              className="flex flex-col items-center gap-1 h-auto py-3 px-4 border-slate-700 hover:bg-slate-700"
+              className={`flex flex-col items-center gap-1 h-auto py-3 px-4 bg-gradient-to-br ${item.color} text-white font-semibold transition-all hover:scale-105 shadow-lg`}
             >
               <span className="text-2xl">{item.emoji}</span>
               <span className="text-xs">{item.label}</span>
@@ -185,6 +187,18 @@ export default function Dashboard() {
 
       <div className="mt-8">
         <MeetingSchedulerNew />
+      </div>
+
+      <div className="mt-8">
+        <EmailTaskExtractor />
+      </div>
+
+      <div className="mt-8">
+        <DailyActivityManager />
+      </div>
+
+      <div className="mt-8">
+        <MeetingAssistant />
       </div>
     </div>
   )

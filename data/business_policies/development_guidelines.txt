@@ -1,0 +1,69 @@
+SOFTWARE DEVELOPMENT GUIDELINES - 2024
+
+CODING STANDARDS:
+- Language: TypeScript for frontend, Python for backend
+- Code style: ESLint for TypeScript, Black for Python
+- Line length: Maximum 100 characters
+- Indentation: 2 spaces (TypeScript), 4 spaces (Python)
+- Naming: camelCase for variables, PascalCase for classes
+
+VERSION CONTROL:
+- Branch naming: feature/description, bugfix/description, hotfix/description
+- Commit messages: Use conventional commits format
+- Branch protection: Main branch requires PR and approval
+- Merge strategy: Squash and merge for feature branches
+- Code review: Minimum 1 approval, all CI checks must pass
+
+TESTING REQUIREMENTS:
+- Unit tests: Minimum 80% code coverage
+- Integration tests: Required for all API endpoints
+- E2E tests: Required for critical user flows
+- Test files: Co-located with source code
+- CI/CD: All tests must pass before deployment
+
+DOCUMENTATION:
+- README: Required for all projects
+- API documentation: OpenAPI/Swagger format
+- Code comments: Required for complex logic
+- Architecture decisions: Document in ADR format
+- User guides: Required for all features
+
+SECURITY PRACTICES:
+- Authentication: OAuth 2.0 for all user-facing APIs
+- Authorization: Role-based access control (RBAC)
+- Data encryption: At rest and in transit
+- Secrets management: Use environment variables or secret manager
+- Dependency updates: Weekly security audit and updates
+- Code scanning: Automated on every PR
+
+DEPLOYMENT PROCESS:
+- Environments: Development → Staging → Production
+- Deployment: Automated via CI/CD pipeline
+- Rollback plan: Required for all deployments
+- Monitoring: Set up alerts for critical metrics
+- Post-deployment: Smoke tests and monitoring review
+
+PERFORMANCE STANDARDS:
+- API response time: < 200ms for 95th percentile
+- Page load time: < 2 seconds for initial load
+- Database queries: Optimized, use indexes appropriately
+- Caching: Implement for frequently accessed data
+- Resource usage: Monitor and optimize regularly
+
+ERROR HANDLING:
+- Logging: Structured logging with appropriate levels
+- Error tracking: Use centralized error tracking service
+- User-facing errors: Friendly, actionable messages
+- Internal errors: Detailed logs for debugging
+- Error recovery: Graceful degradation where possible
+
+CODE REVIEW CHECKLIST:
+- [ ] Code follows style guidelines
+- [ ] Tests are included and passing
+- [ ] Documentation is updated
+- [ ] Security considerations addressed
+- [ ] Performance impact assessed
+- [ ] No hardcoded secrets or credentials
+- [ ] Error handling is appropriate
+- [ ] Accessibility considerations (for frontend)
+

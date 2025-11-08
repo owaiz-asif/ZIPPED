@@ -98,6 +98,61 @@ export async function updateTask(taskId: number, completed: boolean) {
   return await getSql()`UPDATE tasks SET completed = ${completed}, updated_at = NOW() WHERE id = ${taskId} RETURNING *`
 }
 
+// Meeting Summaries
+export interface MeetingSummary {
+  id: string
+  user_id: number
+  title: string
+  transcript: string
+  key_takeaways: string[]
+  action_items: string[]
+  decisions: string[]
+  unresolved_topics: string[]
+  insights: {
+    mostDiscussedTopic: string
+    sentiment: string
+    duration: number
+    participantCount: number
+  }
+  audio_file_url?: string
+  duration?: number
+  created_at: string
+}
+
+export async function saveMeetingSummary(summary: MeetingSummary) {
+  return await getSql()`
+    INSERT INTO meeting_summaries (
+      id, user_id, title, transcript, key_takeaways, action_items, 
+      decisions, unresolved_topics, insights, audio_file_url, duration
+    )
+    VALUES (
+      ${summary.id}, ${summary.user_id}, ${summary.title}, ${summary.transcript},
+      ${JSON.stringify(summary.key_takeaways)}::jsonb,
+      ${JSON.stringify(summary.action_items)}::jsonb,
+      ${JSON.stringify(summary.decisions)}::jsonb,
+      ${JSON.stringify(summary.unresolved_topics)}::jsonb,
+      ${JSON.stringify(summary.insights)}::jsonb,
+      ${summary.audio_file_url || null}, ${summary.duration || null}
+    )
+    RETURNING *
+  `
+}
+
+export async function getMeetingSummaries(userId: number) {
+  return await getSql()`
+    SELECT * FROM meeting_summaries 
+    WHERE user_id = ${userId} 
+    ORDER BY created_at DESC
+  `
+}
+
+export async function getMeetingSummary(meetingId: string, userId: number) {
+  return await getSql()`
+    SELECT * FROM meeting_summaries 
+    WHERE id = ${meetingId} AND user_id = ${userId}
+  `
+}
+
 // Emotion analyses
 export async function saveEmotionAnalysis(
   userId: number,

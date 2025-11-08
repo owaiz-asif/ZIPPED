@@ -26,15 +26,19 @@ export function useTasksData(userId = 1) {
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ userId, name, category }),
         })
+        if (!res.ok) {
+          throw new Error(`Failed to add task: ${res.statusText}`)
+        }
         const newTask = await res.json()
-        mutate([...(data || []), newTask])
+        // Use mutate to trigger revalidation and update the cache
+        await mutate()
         return newTask
       } catch (err) {
         console.error("Error adding task:", err)
         throw err
       }
     },
-    [userId, mutate], // Only include userId and mutate
+    [userId, mutate],
   )
 
   const toggleTask = useCallback(

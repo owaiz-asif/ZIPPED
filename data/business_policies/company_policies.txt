@@ -1,0 +1,68 @@
+COMPANY POLICIES AND PROCEDURES - 2024
+
+WORK FROM HOME POLICY:
+- Employees can work remotely up to 3 days per week
+- Core hours: 10:00 AM - 3:00 PM EST (must be available)
+- Home office setup reimbursement: up to $500
+- Internet stipend: $50/month
+
+TIME OFF POLICY:
+- Paid Time Off (PTO): 20 days per year
+- Sick Leave: 10 days per year
+- Holidays: 10 company holidays
+- PTO requests: Submit at least 2 weeks in advance
+- Blackout dates: Last 2 weeks of each quarter
+
+MEETING ETIQUETTE:
+- All meetings must have an agenda
+- Meetings should start and end on time
+- Maximum meeting duration: 60 minutes (unless approved)
+- No meetings on Fridays after 2:00 PM
+- Standup meetings: Maximum 15 minutes
+
+COMMUNICATION GUIDELINES:
+- Response time: Within 4 business hours
+- Urgent matters: Use Slack @channel or call
+- Email: For formal communications and documentation
+- Slack: For quick questions and team coordination
+- Documentation: All decisions must be documented
+
+CODE REVIEW PROCESS:
+- All code must be reviewed before merging
+- Minimum 1 approval required
+- Reviews should be completed within 24 hours
+- Automated tests must pass before merge
+- Documentation required for complex changes
+
+ONBOARDING PROCESS:
+- Week 1: Orientation and tool setup
+- Week 2: Team introductions and project overview
+- Week 3: First assigned tasks with mentor
+- Week 4: Full integration into team workflow
+- 30-day check-in: Feedback session with manager
+
+PERFORMANCE REVIEWS:
+- Frequency: Quarterly
+- Format: Self-assessment + manager review
+- Focus: Goals, achievements, growth areas
+- Action items: Development plan for next quarter
+- Compensation review: Annually in Q4
+
+EXPENSE REIMBURSEMENT:
+- Submit expenses within 30 days
+- Receipts required for all expenses over $25
+- Approval required for expenses over $500
+- Reimbursement processing: 5-7 business days
+
+TRAINING AND DEVELOPMENT:
+- Annual training budget: $2,000 per employee
+- Conference attendance: Up to 2 per year
+- Online courses: Company-paid subscriptions available
+- Internal training: Monthly tech talks and workshops
+
+EQUIPMENT POLICY:
+- Laptop refresh: Every 3 years
+- Monitor and accessories: Provided by company
+- Software licenses: Company covers all work-related tools
+- Personal device usage: Allowed with security approval
+

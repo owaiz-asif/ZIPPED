@@ -30,25 +30,37 @@ export default function EmotionDetector() {
   }
 
   return (
-    <Card className="bg-slate-800/50 border-slate-700">
+    <Card className="bg-gradient-to-br from-slate-800/60 to-slate-900/60 border-slate-700/50 hover:border-slate-600/50 transition-all">
       <CardHeader>
-        <CardTitle className="flex items-center gap-2">
-          <Brain className="w-5 h-5 text-purple-500" />
+        <CardTitle className="flex items-center gap-2 text-slate-100">
+          <Brain className="w-5 h-5 text-purple-400" />
           Emotion Analyzer
         </CardTitle>
-        <CardDescription>Understand your emotional state through text analysis</CardDescription>
+        <CardDescription className="text-slate-400">Analyze emotions in your sentences and text</CardDescription>
       </CardHeader>
 
       <CardContent className="space-y-4">
         <textarea
-          placeholder="Write how you're feeling or what's on your mind..."
+          placeholder="Enter a sentence or paragraph to analyze emotions... (e.g., 'I'm feeling excited about the new project but also a bit nervous about the deadline')"
           value={input}
           onChange={(e) => setInput(e.target.value)}
-          className="w-full bg-slate-700 border border-slate-600 rounded-lg px-4 py-3 text-white placeholder-slate-400 focus:outline-none focus:border-purple-500 min-h-24"
+          onKeyDown={(e) => {
+            if (e.key === "Enter" && (e.ctrlKey || e.metaKey)) {
+              e.preventDefault()
+              handleAnalyze()
+            }
+          }}
+          className="w-full bg-slate-700/50 border border-slate-600/50 rounded-lg px-4 py-3 text-white placeholder-slate-400 focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 min-h-24 transition-all"
+          suppressHydrationWarning
         />
 
-        <Button onClick={handleAnalyze} className="w-full bg-purple-600 hover:bg-purple-700">
-          Analyze Emotion
+        <Button 
+          onClick={handleAnalyze} 
+          disabled={!input.trim()}
+          className="w-full bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white font-semibold shadow-lg shadow-purple-500/20 hover:shadow-purple-500/30 transition-all" 
+          suppressHydrationWarning
+        >
+          Analyze Emotion <span className="text-xs opacity-70 ml-2">(Ctrl+Enter)</span>
         </Button>
 
         {analysis && (

@@ -13,7 +13,7 @@ export default function Navigation({
   ]
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-slate-900/80 backdrop-blur-xl border-b border-slate-800 z-50">
+    <nav className="fixed top-0 left-0 right-0 bg-slate-900/80 backdrop-blur-xl border-b border-slate-800 z-50" suppressHydrationWarning>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center gap-3">
@@ -33,6 +33,7 @@ export default function Navigation({
                     ? "bg-blue-600 text-white shadow-lg shadow-blue-500/20"
                     : "text-slate-400 hover:text-slate-300 hover:bg-slate-800/50"
                 }`}
+                suppressHydrationWarning
               >
                 <Icon className="w-4 h-4" />
                 <span className="text-sm font-medium">{label}</span>

@@ -399,52 +399,124 @@ I couldn't find documents related to: "{query}"
         query_types: List[str], sentiment: Dict[str, str], 
         action_items: List[str]
     ) -> str:
-        """Format professional response."""
+        """Format professional response with better summarization."""
         sections = []
         
-        # Sentiment
-        sections.append(f"**Sentiment Assessment:** {sentiment['label']} - {sentiment['explanation']}")
-        sections.append("")
+        # For summary queries, provide a comprehensive summary
+        query_lower = query.lower()
+        is_summary_query = any(word in query_lower for word in ['summary', 'summarize', 'overview', 'recap', 'yesterday', 'today', 'work'])
         
-        # Header
-        if 'meeting' in query_types:
-            sections.append("## 📋 Meeting Summary")
-        elif 'schedule' in query_types:
-            sections.append("## 📅 Schedule Information")
-        elif 'task' in query_types:
-            sections.append("## ✅ Task Overview")
-        elif 'analysis' in query_types:
-            sections.append("## 📊 Analysis")
+        if is_summary_query:
+            # Provide a comprehensive summary
+            sections.append("## 📋 Summary")
+            sections.append("")
+            
+            # Combine all relevant context into a coherent summary
+            all_content = " ".join([doc["content"] for doc in context_docs])
+            
+            # Extract key information by document type
+            if 'meeting' in query_types or 'meeting' in query_lower:
+                sections.append("### Meeting Information:")
+                sections.append("")
+                # Extract meeting-specific details
+                meeting_info = []
+                for doc in context_docs:
+                    if 'meeting' in doc.get('type', '').lower() or 'meeting' in doc.get('filename', '').lower():
+                        # Extract key sentences from meeting notes
+                        content = doc["content"]
+                        sentences = content.split('.')
+                        key_sentences = [s.strip() for s in sentences if len(s.strip()) > 20 and len(s.strip()) < 200][:3]
+                        meeting_info.extend(key_sentences)
+                
+                if meeting_info:
+                    for info in meeting_info[:5]:
+                        sections.append(f"• {info}")
+                else:
+                    # Fallback to key points
+                    key_points = self._extract_key_points(context_docs, max_points=5)
+                    for point in key_points:
+                        sections.append(f"• {point}")
+            
+            elif 'schedule' in query_types or 'schedule' in query_lower or 'timeline' in query_lower:
+                sections.append("### Schedule & Timeline:")
+                sections.append("")
+                key_points = self._extract_key_points(context_docs, max_points=8)
+                for point in key_points:
+                    sections.append(f"• {point}")
+            
+            else:
+                # General summary
+                sections.append("### Key Information:")
+                sections.append("")
+                key_points = self._extract_key_points(context_docs, max_points=8)
+                if key_points:
+                    for point in key_points:
+                        sections.append(f"• {point}")
+                else:
+                    # Use first few sentences from context
+                    all_sentences = all_content.split('.')
+                    relevant_sentences = [s.strip() for s in all_sentences if len(s.strip()) > 30 and len(s.strip()) < 300][:5]
+                    for sent in relevant_sentences:
+                        sections.append(f"• {sent}")
+            
+            sections.append("")
+            
+            # Action items if available
+            if action_items:
+                sections.append("### 🎯 Action Items:")
+                sections.append("")
+                for item in action_items:
+                    sections.append(f"• {item}")
+                sections.append("")
         else:
-            sections.append("## 📌 Information Summary")
-        sections.append("")
-        
-        # Key points
-        sections.append("### Key Points:")
-        sections.append("")
-        key_points = self._extract_key_points(context_docs, max_points=5)
-        for i, point in enumerate(key_points, 1):
-            sections.append(f"{i}. {point}")
-        sections.append("")
-        
-        # Action items
-        if action_items:
-            sections.append("### 🎯 Action Items:")
+            # Regular query response
+            # Sentiment
+            sections.append(f"**Sentiment:** {sentiment['label']} - {sentiment['explanation']}")
             sections.append("")
-            for item in action_items:
-                sections.append(f"- {item}")
+            
+            # Header
+            if 'meeting' in query_types:
+                sections.append("## 📋 Meeting Information")
+            elif 'schedule' in query_types:
+                sections.append("## 📅 Schedule Information")
+            elif 'task' in query_types:
+                sections.append("## ✅ Task Information")
+            elif 'analysis' in query_types:
+                sections.append("## 📊 Analysis")
+            else:
+                sections.append("## 📌 Information")
             sections.append("")
+            
+            # Key points
+            sections.append("### Details:")
+            sections.append("")
+            key_points = self._extract_key_points(context_docs, max_points=5)
+            if key_points:
+                for i, point in enumerate(key_points, 1):
+                    sections.append(f"{i}. {point}")
+            else:
+                # Use relevant content directly
+                for doc in context_docs[:3]:
+                    content = doc["content"][:200] + "..." if len(doc["content"]) > 200 else doc["content"]
+                    sections.append(f"• {content}")
+            sections.append("")
+            
+            # Action items
+            if action_items:
+                sections.append("### 🎯 Action Items:")
+                sections.append("")
+                for item in action_items:
+                    sections.append(f"• {item}")
+                sections.append("")
         
         # Sources
         unique_files = list(set([doc.get('filename', 'unknown') for doc in context_docs]))
-        sections.append("### 📚 Sources:")
-        sections.append("")
-        for filename in unique_files[:3]:
-            sections.append(f"- {filename}")
-        sections.append("")
-        
-        sections.append("---")
-        sections.append("💡 *Need more details? Ask me follow-up questions!*")
+        if unique_files:
+            sections.append("### 📚 Sources:")
+            sections.append("")
+            for filename in unique_files[:3]:
+                sections.append(f"• {filename}")
+            sections.append("")
         
         return "\n".join(sections)
 

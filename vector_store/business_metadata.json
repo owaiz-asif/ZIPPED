@@ -58,5 +58,95 @@
     "content": "WEEKLY MEETING SCHEDULE - January 2024\n\nMONDAY\n- 9:00 AM: Team Standup (30 min) - Conference Room A\n- 2:00 PM: Sprint Planning (60 min) - Conference Room B\n- 4:00 PM: Code Review Session (45 min) - Virtual\n\nTUESDAY\n- 10:00 AM: Client Check-in (30 min) - Virtual\n- 11:00 AM: Design Review (45 min) - Conference Room A\n- 3:00 PM: One-on-One Sessions (30 min each) - Various\n\nWEDNESDAY\n- 9:30 AM: Team Standup (30 min) - Conference Room A\n- 1:00 PM: Architecture Discussion (60 min) - Conference Room B\n- 3:30 PM: Training Session (90 min) - Virtual\n\nTHURSDAY\n- 10:00 AM: Team Standup (30 min) - Conference Room A\n- 2:00 PM: Retrospective Meeting (60 min) - Conference Room B\n- 4:00 PM: Documentation Review (30 min) - Virtual\n\nFRIDAY\n- 9:00 AM: Weekly Review (45 min) - Conference Room A\n- 11:00 AM: Planning for Next Week (60 min) - Conference Room B\n- 2:00 PM: Optional Office Hours - Virtual\n\nRECURRING MEETINGS:\n- Daily Standup: Mon-Thu at 9:30 AM (30 min)\n- Weekly Sprint Planning: Mondays at 2:00 PM (60 min)\n- Monthly All-Hands: First Friday at 10:00 AM (90 min)\n\nMEETING BEST PRACTICES:\n- Always have an agenda prepared\n- Start and end on time\n- Take notes and share action items\n- Follow up within 24 hours with meeting summary\n\n.",
     "type": "general",
     "timestamp": "2025-11-08T21:51:40.929626"
+  },
+  {
+    "filename": "budget_review_2024.txt",
+    "content": "Q1 BUDGET REVIEW MEETING - January 30, 2024\n\nAttendees: CFO, CEO, Department Heads (Engineering, Marketing, Sales, Operations)\n\nMeeting Purpose:\nReview Q1 budget allocation, spending to date, and forecast for remainder of quarter\n\nBudget Overview:\n- Total Q1 Budget: $2.5M\n- Spent to Date: $850K (34% of budget)\n- Projected Q1 Total: $2.3M (under budget by $200K)\n\nDepartment Breakdown:\nEngineering: $1.2M budget, $420K spent (35%), on track\nMarketing: $600K budget, $180K spent (30%), on track\nSales: $400K budget, $150K spent (37.5%), slightly over\nOperations: $300K budget, $100K spent (33%), on track\n\nKey Expenses:\n- Infrastructure costs: $120K (cloud services, servers)\n- Personnel: $580K (salaries, benefits)\n- Tools and software: $80K (development tools, licenses)\n- Marketing campaigns: $70K (advertising, content creation)\n\nCost Savings Identified:\n- Negotiated better cloud provider rates (saved $15K/month)\n- Consolidated software licenses (saved $8K/quarter)\n- Optimized infrastructure usage (saved $12K/month)\n\nBudget Adjustments:\n1. Approved additional $50K for marketing campaign expansion\n2. Allocated $30K for emergency infrastructure scaling\n3.",
+    "type": "general",
+    "timestamp": "2025-11-09T02:00:07.601318"
+  },
+  {
+    "filename": "budget_review_2024.txt",
+    "content": "Set aside $20K contingency fund for unexpected expenses\n\nForecast:\n- Remaining expenses: $1.45M\n- Expected savings: $200K\n- Final Q1 spend: $2.3M (92% of budget)\n\nDecisions:\n1. Proceed with marketing campaign expansion\n2. Approve infrastructure scaling budget\n3. Maintain current hiring freeze (no new positions)\n4. Review budget again at mid-quarter (February 15)\n\nAction Items:\n1. Finance: Update budget tracking dashboard\n2. Engineering: Submit infrastructure scaling request\n3. Marketing: Provide campaign expansion proposal\n4. All Departments: Submit Q2 budget requests by February 20\n\nNext Review: February 15, 2024 at 10:00 AM",
+    "type": "general",
+    "timestamp": "2025-11-09T02:00:07.601318"
+  },
+  {
+    "filename": "client_presentation_2024.txt",
+    "content": "CLIENT PRESENTATION MEETING - January 20, 2024\n\nClient: TechCorp Industries\nOur Team: Project Manager, Lead Developer, UX Designer\n\nMeeting Objective:\nPresent progress on Q1 deliverables and gather feedback on new features\n\nPresentation Highlights:\n- Demonstrated new dashboard interface with real-time analytics\n- Showed prototype of mobile app integration\n- Presented timeline for remaining Q1 milestones\n\nClient Feedback:\n- Very positive response to dashboard design\n- Requested additional export functionality for reports\n- Interested in expanding mobile app features\n- Approved budget for additional developer resources\n\nDecisions Made:\n1. Proceed with export functionality (priority: high)\n2. Schedule follow-up meeting for mobile app roadmap\n3. Add 2 developers to team starting next month\n4. Client will provide sample data for testing by end of week\n\nNext Steps:\n- Send detailed proposal for export features\n- Prepare mobile app roadmap presentation\n- Begin onboarding process for new developers\n\nFollow-up Meeting: February 5, 2024 at 2:00 PM",
+    "type": "general",
+    "timestamp": "2025-11-09T02:00:09.750936"
+  },
+  {
+    "filename": "product_launch_meeting.txt",
+    "content": "PRODUCT LAUNCH MEETING - February 10, 2024\n\nAttendees: CEO, CTO, Product Manager, Marketing Director, Sales Lead, Engineering Lead\n\nMeeting Objective:\nReview final preparations for Q1 product launch and coordinate go-to-market strategy\n\nKey Discussion Points:\n- Engineering team confirmed all critical bugs resolved\n- Marketing materials are ready for distribution\n- Sales team has completed training on new features\n- Customer support team is prepared with FAQ documentation\n- Press release scheduled for launch day\n\nLaunch Timeline:\n- Beta testing completed successfully with 200 users\n- Final QA testing passed with 98% test coverage\n- Production deployment scheduled for February 15, 2024\n- Marketing campaign begins February 12, 2024\n\nDecisions Made:\n1. Launch date confirmed: February 15, 2024 at 9:00 AM EST\n2. All team members on standby for launch day support\n3. Monitoring dashboard will track real-time metrics\n4. Daily check-ins scheduled for first week post-launch\n\nAction Items:\n1. Engineering: Final production deployment by February 14\n2. Marketing: Distribute press release to media contacts\n3. Sales: Prepare demo environment for client presentations\n4.",
+    "type": "general",
+    "timestamp": "2025-11-09T02:00:11.974324"
+  },
+  {
+    "filename": "product_launch_meeting.txt",
+    "content": "Support: Create knowledge base articles for common questions\n5. Product: Prepare launch day announcement blog post\n\nSuccess Metrics:\n- Target: 1,000 sign-ups in first week\n- Goal: 95% uptime during launch period\n- Objective: Positive media coverage in 5+ publications\n\nFollow-up: Launch Day Standup - February 15, 2024 at 8:00 AM",
+    "type": "general",
+    "timestamp": "2025-11-09T02:00:11.974324"
+  },
+  {
+    "filename": "team_standup_2024.txt",
+    "content": "TEAM STANDUP MEETING - January 15, 2024\n\nAttendees: John, Sarah, Mike, Emily, David\n\nAgenda:\n1. Sprint progress review\n2. Blockers and challenges\n3. Upcoming priorities\n\nKey Points Discussed:\n- Completed user authentication module ahead of schedule\n- Database migration is 80% complete, expected finish by end of week\n- Frontend redesign is on track for next sprint\n- Integration testing revealed 3 minor bugs, all assigned and in progress\n\nBlockers:\n- Sarah: Waiting on API documentation from external vendor (expected tomorrow)\n- Mike: Need access to staging environment (escalated to DevOps)\n\nAction Items:\n1. John: Review pull requests by EOD\n2. Sarah: Follow up with vendor on API docs\n3. Mike: Schedule meeting with DevOps team\n4. Emily: Update project timeline with new estimates\n5. David: Prepare demo for client review next week\n\nNext Meeting: January 18, 2024 at 10:00 AM",
+    "type": "general",
+    "timestamp": "2025-11-09T02:00:14.197179"
+  },
+  {
+    "filename": "technical_review_2024.txt",
+    "content": "TECHNICAL ARCHITECTURE REVIEW - January 25, 2024\n\nAttendees: CTO, Lead Architect, Senior Engineers (3), DevOps Lead, Security Specialist\n\nAgenda:\n1. Review current system architecture\n2. Discuss scalability concerns\n3. Security audit findings\n4.",
+    "type": "general",
+    "timestamp": "2025-11-09T02:00:16.500322"
+  },
+  {
+    "filename": "technical_review_2024.txt",
+    "content": "Performance optimization opportunities\n\nArchitecture Overview:\n- Microservices architecture with 8 core services\n- API Gateway handling all external requests\n- Database cluster with read replicas for scaling\n- Caching layer using Redis for improved performance\n- Message queue for asynchronous processing\n\nKey Findings:\n- Current system handles 10,000 requests per minute\n- Database queries optimized, average response time: 45ms\n- Security audit found 2 minor vulnerabilities (both patched)\n- Load testing shows system can scale to 50,000 RPM with current setup\n\nPerformance Improvements:\n- Implemented connection pooling (reduced latency by 30%)\n- Added CDN for static assets (improved load time by 40%)\n- Database indexing optimized (query time reduced by 25%)\n- Caching strategy refined (cache hit rate now 85%)\n\nSecurity Enhancements:\n- Added rate limiting to prevent DDoS attacks\n- Implemented OAuth 2.0 for authentication\n- All API endpoints now require authentication\n- Data encryption at rest and in transit\n\nScalability Plan:\n- Phase 1 (Current): Handle 50,000 RPM\n- Phase 2 (Q2): Scale to 200,000 RPM with horizontal scaling\n- Phase 3 (Q3): Implement auto-scaling based on load\n- Phase 4 (Q4): Multi-region deployment for global reach\n\nTechnical Debt:\n- 3 legacy services need refactoring (scheduled for Q2)\n- Documentation needs updating (assigned to technical writers)\n- Test coverage at 92% (target: 95% by end of Q1)\n\nNext Steps:\n1.",
+    "type": "general",
+    "timestamp": "2025-11-09T02:00:16.500322"
+  },
+  {
+    "filename": "technical_review_2024.txt",
+    "content": "Complete security patches by January 30\n2. Begin Phase 2 scalability planning\n3. Schedule code review sessions for legacy services\n4. Update architecture documentation\n\nFollow-up Meeting: February 8, 2024 at 2:00 PM",
+    "type": "general",
+    "timestamp": "2025-11-09T02:00:16.500322"
+  },
+  {
+    "filename": "client_meetings_2024.txt",
+    "content": "CLIENT MEETING SCHEDULE - 2024\n\nRECURRING CLIENT MEETINGS:\n\nTechCorp Industries:\n- Frequency: Bi-weekly on Tuesdays\n- Time: 2:00 PM - 3:00 PM EST\n- Format: Virtual (Zoom)\n- Attendees: Project Manager, Lead Developer, Client Stakeholders\n- Purpose: Progress updates, feedback collection, roadmap discussions\n\nGlobal Solutions Inc:\n- Frequency: Monthly on first Friday\n- Time: 10:00 AM - 11:30 AM EST\n- Format: In-person (Client office)\n- Attendees: Account Manager, Technical Lead, Client CTO\n- Purpose: Strategic planning, quarterly reviews\n\nStartup Ventures:\n- Frequency: Weekly on Wednesdays\n- Time: 4:00 PM - 4:30 PM EST\n- Format: Virtual (Google Meet)\n- Attendees: Product Manager, Client Founder\n- Purpose: Quick sync, issue resolution\n\nUPCOMING SCHEDULED MEETINGS:\n\nFebruary 2024:\n- Feb 6: TechCorp - Q1 Progress Review (2:00 PM)\n- Feb 7: Startup Ventures - Weekly Sync (4:00 PM)\n- Feb 13: TechCorp - Feature Demo (2:00 PM)\n- Feb 14: Startup Ventures - Weekly Sync (4:00 PM)\n- Feb 20: TechCorp - Roadmap Discussion (2:00 PM)\n- Feb 21: Startup Ventures - Weekly Sync (4:00 PM)\n- Feb 28: Global Solutions - Monthly Review (10:00 AM)\n\nMarch 2024:\n- Mar 5: TechCorp - Sprint Review (2:00 PM)\n- Mar 6: Startup Ventures - Weekly Sync (4:00 PM)\n- Mar 12: TechCorp - Client Feedback Session (2:00 PM)\n- Mar 13: Startup Ventures - Weekly Sync (4:00 PM)\n- Mar 19: TechCorp - Planning Meeting (2:00 PM)\n- Mar 20: Startup Ventures - Weekly Sync (4:00 PM)\n- Mar 27: Global Solutions - Q1 Review (10:00 AM)\n- Mar 27: Startup Ventures - Weekly Sync (4:00 PM)\n\nMEETING PREPARATION CHECKLIST:\n- [ ] Review previous meeting notes\n- [ ] Prepare agenda and talking points\n- [ ] Gather relevant documents and demos\n- [ ] Confirm meeting time with all attendees\n- [ ] Test video/audio equipment (for virtual)\n- [ ] Prepare action items from last meeting\n- [ ] Review client's recent communications\n\nMEETING FOLLOW-UP:\n- Send meeting summary within 24 hours\n- Document action items and owners\n- Schedule follow-up if needed\n- Update project management system\n- Share relevant documents with client\n\nCLIENT PREFERENCES:\nTechCorp: Prefers detailed technical discussions, wants weekly code demos\nGlobal Solutions: Focus on business outcomes, quarterly ROI reports\nStartup Ventures: Quick updates, prefer async communication when possible",
+    "type": "general",
+    "timestamp": "2025-11-09T02:00:18.644637"
+  },
+  {
+    "filename": "project_timeline_2024.txt",
+    "content": "2024 PROJECT TIMELINE AND MILESTONES\n\nQ1 2024 (January - March)\nPhase 1: Foundation\n- Jan 1-15: Project kickoff and team setup\n- Jan 16-31: Core infrastructure development\n- Feb 1-15: Feature development sprint 1\n- Feb 16-29: Feature development sprint 2\n- Mar 1-15: Integration and testing\n- Mar 16-31: Beta release and user feedback\n\nKey Milestones:\n\u2713 Jan 15: Team fully onboarded\n\u2713 Jan 31: Infrastructure complete\n\u2192 Feb 15: Sprint 1 features complete\n\u2192 Feb 29: Sprint 2 features complete\n\u2192 Mar 15: Integration testing complete\n\u2192 Mar 31: Beta release\n\nQ2 2024 (April - June)\nPhase 2: Enhancement\n- Apr 1-15: Beta feedback analysis\n- Apr 16-30: Feature improvements\n- May 1-15: Performance optimization\n- May 16-31: Security hardening\n- Jun 1-15: Final testing\n- Jun 16-30: Production launch preparation\n\nKey Milestones:\n\u2192 Apr 15: Beta feedback incorporated\n\u2192 May 15: Performance targets met\n\u2192 Jun 15: Security audit passed\n\u2192 Jun 30: Production ready\n\nQ3 2024 (July - September)\nPhase 3: Scale\n- Jul 1-31: Production launch\n- Aug 1-31: User acquisition and growth\n- Sep 1-30: Feature expansion\n\nKey Milestones:\n\u2192 Jul 15: Production launch\n\u2192 Aug 31: 10,000 active users\n\u2192 Sep 30: Additional features released\n\nQ4 2024 (October - December)\nPhase 4: Optimize\n- Oct 1-31: Performance monitoring\n- Nov 1-30: User experience improvements\n- Dec 1-31: Year-end review and planning\n\nKey Milestones:\n\u2192 Oct 31: Performance metrics reviewed\n\u2192 Nov 30: UX improvements deployed\n\u2192 Dec 31: Annual review complete\n\nCRITICAL PATH:\n1.",
+    "type": "general",
+    "timestamp": "2025-11-09T02:00:20.934166"
+  },
+  {
+    "filename": "project_timeline_2024.txt",
+    "content": "Infrastructure \u2192 Development \u2192 Testing \u2192 Launch\n2. Each phase depends on previous phase completion\n3. Buffer time built into each milestone (10% contingency)\n\nRESOURCE REQUIREMENTS:\n- Q1: 8 developers, 2 designers, 1 PM\n- Q2: 10 developers, 3 designers, 2 PMs\n- Q3: 12 developers, 4 designers, 2 PMs\n- Q4: 10 developers, 3 designers, 2 PMs\n\nRISK MITIGATION:\n- Technical risks: Weekly architecture reviews\n- Resource risks: Cross-training team members\n- Timeline risks: Agile methodology with sprint buffers\n- Quality risks: Continuous testing and code reviews",
+    "type": "general",
+    "timestamp": "2025-11-09T02:00:20.934166"
+  },
+  {
+    "filename": "quarterly_planning_2024.txt",
+    "content": "Q1 2024 QUARTERLY PLANNING SCHEDULE\n\nJANUARY\nWeek 1 (Jan 1-5):\n- Kickoff Meeting: Jan 2, 10:00 AM\n- Goal Setting Session: Jan 3, 2:00 PM\n- Resource Allocation Review: Jan 4, 11:00 AM\n\nWeek 2 (Jan 8-12):\n- Sprint Planning: Jan 8, 9:00 AM\n- Client Onboarding: Jan 10, 2:00 PM\n- Technical Architecture Review: Jan 12, 10:00 AM\n\nWeek 3 (Jan 15-19):\n- Mid-Sprint Review: Jan 16, 3:00 PM\n- Team Building Activity: Jan 18, 2:00 PM\n- Progress Report: Jan 19, 11:00 AM\n\nWeek 4 (Jan 22-26):\n- Sprint Retrospective: Jan 22, 10:00 AM\n- Next Sprint Planning: Jan 24, 9:00 AM\n- Monthly Review: Jan 26, 2:00 PM\n\nFEBRUARY\n- Focus: Feature Development and Testing\n- Key Milestones: Beta Release, User Testing Phase\n- Major Meetings: Client Demo (Feb 15), Technical Review (Feb 28)\n\nMARCH\n- Focus: Final Testing and Production Preparation\n- Key Milestones: Production Release, Documentation Complete\n- Major Meetings: Launch Planning (Mar 5), Post-Launch Review (Mar 29)\n\nQUARTERLY OBJECTIVES:\n1. Complete Phase 1 development\n2. Achieve 95% test coverage\n3. Onboard 3 new team members\n4. Launch beta version to 50 users\n5.",
+    "type": "general",
+    "timestamp": "2025-11-09T02:00:23.189398"
+  },
+  {
+    "filename": "quarterly_planning_2024.txt",
+    "content": "Complete all documentation\n\nRESOURCE ALLOCATION:\n- Development Team: 8 developers\n- QA Team: 3 testers\n- Design Team: 2 designers\n- Project Management: 2 PMs\n\nCRITICAL DEADLINES:\n- Jan 31: Phase 1 Alpha Complete\n- Feb 29: Beta Release\n- Mar 31: Production Launch",
+    "type": "general",
+    "timestamp": "2025-11-09T02:00:23.189398"
+  },
+  {
+    "filename": "weekly_schedule_january.txt",
+    "content": "WEEKLY MEETING SCHEDULE - January 2024\n\nMONDAY\n- 9:00 AM: Team Standup (30 min) - Conference Room A\n- 2:00 PM: Sprint Planning (60 min) - Conference Room B\n- 4:00 PM: Code Review Session (45 min) - Virtual\n\nTUESDAY\n- 10:00 AM: Client Check-in (30 min) - Virtual\n- 11:00 AM: Design Review (45 min) - Conference Room A\n- 3:00 PM: One-on-One Sessions (30 min each) - Various\n\nWEDNESDAY\n- 9:30 AM: Team Standup (30 min) - Conference Room A\n- 1:00 PM: Architecture Discussion (60 min) - Conference Room B\n- 3:30 PM: Training Session (90 min) - Virtual\n\nTHURSDAY\n- 10:00 AM: Team Standup (30 min) - Conference Room A\n- 2:00 PM: Retrospective Meeting (60 min) - Conference Room B\n- 4:00 PM: Documentation Review (30 min) - Virtual\n\nFRIDAY\n- 9:00 AM: Weekly Review (45 min) - Conference Room A\n- 11:00 AM: Planning for Next Week (60 min) - Conference Room B\n- 2:00 PM: Optional Office Hours - Virtual\n\nRECURRING MEETINGS:\n- Daily Standup: Mon-Thu at 9:30 AM (30 min)\n- Weekly Sprint Planning: Mondays at 2:00 PM (60 min)\n- Monthly All-Hands: First Friday at 10:00 AM (90 min)\n\nMEETING BEST PRACTICES:\n- Always have an agenda prepared\n- Start and end on time\n- Take notes and share action items\n- Follow up within 24 hours with meeting summary",
+    "type": "general",
+    "timestamp": "2025-11-09T02:00:26.952732"
   }
 ]
