@@ -20,8 +20,13 @@ export default function DailyActivityManager() {
   const { tasks: dbTasks, toggleTask, isLoading } = useTasksData(DEMO_USER_ID)
   const [tasks, setTasks] = useState<any[]>([])
   const [selectedDate, setSelectedDate] = useState(new Date().toISOString().split("T")[0])
+  const [mounted, setMounted] = useState(false)
   const hasInitialized = useRef(false)
   const lastDbTasksHash = useRef<string>("")
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
 
   // Create a hash of task IDs to detect changes without causing infinite loops
   const getTasksHash = (taskList: typeof dbTasks): string => {
@@ -257,7 +262,7 @@ export default function DailyActivityManager() {
         <CardHeader>
           <CardTitle className="text-slate-100">Today's Task Timeline</CardTitle>
           <CardDescription className="text-slate-400">
-            Your tasks for {new Date().toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric" })}
+            {mounted ? `Your tasks for ${new Date().toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric" })}` : "Your tasks for today"}
           </CardDescription>
         </CardHeader>
         <CardContent>
